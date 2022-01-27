@@ -1,11 +1,5 @@
 @import url('./components/css/shared.css');
 
-/*------------------------ Spacing System ---------------------------*/
-
-/* Font sizes (px) -  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 9
-
-Spacing system (px)  - 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128   */
-
 body{
     min-height: 100vh;
     height: max-content;
@@ -71,7 +65,7 @@ main p{
 
 .button-container a:hover{
     outline:none;
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 4px;
     border: 2px solid var(--text-primaryDark);
 }
