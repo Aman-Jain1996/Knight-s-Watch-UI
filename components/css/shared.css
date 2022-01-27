@@ -11,6 +11,8 @@ Spacing system (px)  - 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  
     --text-white:#fafaf9;
 }
 
+/* ----------Resets----------- */
+
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +40,69 @@ a{
     text-decoration:none;
     color:inherit;
     cursor: pointer;
+}
+
+/* Landing Page Styles */
+
+header{
+    padding: 3.2rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-left img{
+    padding:1rem;
+    border-radius: 50%;
+    width:6rem;
+    height:6rem;
+}
+
+.nav-right ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:3.6rem;
+}
+
+ul li{
+    font-size:1.6rem;
+    font-weight: 600;
+    color:var(--text-primary);
+    padding: 1rem 0;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li:hover{
+    color: var(--text-primaryDark);
+}
+
+ul li::before{
+    position:absolute;
+    content: "";
+    width: 0;
+    bottom: 0px;
+    visibility: hidden;
+    border-bottom: 2px solid var(--btn-primary);
+    transition: all .5s ease-in-out;
+}
+
+ul li:hover::before{
+    width: 105%;
+    visibility: visible;
 }
 
 .nav-left a img:hover{
