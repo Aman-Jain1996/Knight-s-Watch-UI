@@ -1,0 +1,67 @@
+/* Font sizes (px) -  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 9
+
+Spacing system (px)  - 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128   */
+
+:root{
+    --text-primary:#3E4247;
+    --text-primaryDark:#060707;
+    --text-primaryLight:#ececed;
+    --btn-primary:#4c6ef5;
+    --btn-primaryLight:#629bf8;
+    --text-white:#fafaf9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Josefin Sans' , sans-serif;
+}
+
+html{
+    font-size:62.5%;
+    font-weight: 400;
+    color:var(--text-primary);
+}
+
+.container{
+    max-width: 120rem;
+    width:80%;
+    margin:auto;
+}
+
+ul li{
+    list-style-type:none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    cursor: pointer;
+}
+
+.nav-left a img:hover{
+    animation: logo 1s ease-in-out;
+}
+
+@keyframes logo {
+    0%{
+        transform: rotate(0);
+    }
+
+    25%{
+        transform: rotate(45deg);
+    }
+
+    50%{
+        transform: rotate(0);
+    }
+
+    75%{
+        transform: rotate(-45deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
