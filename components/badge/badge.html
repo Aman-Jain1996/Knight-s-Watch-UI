@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./badge.css">
 
     <!-- Ion Icon import -->
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!-- Ion Icon import End -->
 
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+
+    <link rel="stylesheet" href="./badge.css">
     <title>Knight's Watch UI | Badge</title>
 </head>
 <body>
@@ -98,7 +107,119 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Badge
+                    </h3>
+                    <p class="intro-para">
+                        Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used.
+                    </p>
+                </div>
                 
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Badges used with Avatar
+                    </h4>
+                    <p>
+                        They can be used to show the availability status of a user. We will be using our 'avatar' classes here to make avatar.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>online | sleep | dnd</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="badge">
+                            <img class="avatar" src="https://picsum.photos/id/237/200/300" alt="Badge">
+                            <div class="online"></div>
+                        </div>
+                        
+                        <div class="badge">
+                            <img class="avatar sm" src="https://picsum.photos/id/1005/200/300" alt="Badge">
+                            <div class="sleep"></div>
+                        </div>
+
+                        <div class="badge">
+                            <img class="avatar square lg" src="https://picsum.photos/id/1012/200/300" alt="Badge">
+                            <div class="dnd"></div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar" src="image-source" alt="Badge"&gt;
+                &lt;div class="online"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar sm" src="image-source" alt="Badge"&gt;
+                &lt;div class="sleep"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class="badge"&gt;
+                &lt;img class="avatar square lg" src="image-source" alt="Badge"&gt;
+                &lt;div class="dnd"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Badges with Icons
+                    </h4>
+                    <p>
+                        Badges can also be used to show count of something when clubbed with any icon e.g; Count of items in cart , count of mails etc.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>numbered | numbered-success | numbered-danger</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="badge">
+                            <ion-icon name="cart-outline"></ion-icon>
+                            <div class="numbered">4</div>
+                        </div>
+                        
+                        <div class="badge">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <div class="numbered-success">10</div>
+                        </div>
+
+                        <div class="badge">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                            <div class="numbered-danger">99+</div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+            &lt;div class="badge"&gt;
+                &lt;ion-icon name="cart-outline"&gt;&lt;/ion-icon&gt;
+                &lt;div class="numbered"&gt;4&lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class="badge"&gt;
+                &lt;ion-icon name="mail-outline"&gt;&lt;/ion-icon&gt;
+                &lt;div class="numbered-success"&gt;10&lt;/div&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class="badge"&gt;
+                &lt;ion-icon name="calendar-outline"&gt;&lt;/ion-icon&gt;
+                &lt;div class="numbered-danger"&gt;99+&lt;/div&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
             </div>
         </main>
         <footer>
@@ -116,5 +237,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

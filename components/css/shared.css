@@ -397,3 +397,11 @@ footer ion-icon:hover{
 }
 
 /* Left Nav Scrollbar styling End */
+
+/* Icons Styling Start */
+
+ion-icon{
+    font-size: 3.6rem;
+}
+
+/* Icons Styling End */
