@@ -12,6 +12,7 @@ Spacing system (px)  - 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  
     --text-primaryLight:#c5c6c8;
     --btn-primary:#4c6ef5;
     --btn-primaryLight:#629bf8;
+    --btn-default:#495057;
     --text-white:#fafaf9;
     --hr-color:#d9d9d9;
     --danger:#ef4444;

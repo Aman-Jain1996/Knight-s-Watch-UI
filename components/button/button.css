@@ -1,1 +1,87 @@
 @import url('../css/shared.css');
+
+.btn{
+    padding:1.2rem 1.6rem;
+    width:max-content;
+    border: none;
+    background-color:var(--btn-default);
+    color: var(--text-white);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color:var(--btn-primary);
+}
+
+.btn-secondary{
+    background-color:var(--secondary);
+}
+
+.btn-success{
+    background-color:var(--success);
+}
+
+.btn-error{
+    background-color:var(--danger);
+}
+
+.rounded-sm{
+    border-radius:4px;
+}
+
+.rounded-m{
+    border-radius:6px;
+}
+
+.rounded-lg{
+    border-radius:8px;
+}
+
+.rounded-xl{
+    border-radius:10px;
+}
+
+.outline-default{
+    border: 1px solid var(--btn-default);
+    color:var(--btn-default);
+    background-color:transparent;
+}
+
+.outline-success{
+    border: 1px solid var(--success);
+    color:var(--success);
+    background-color:transparent;
+}
+
+.outline-error{
+    border: 1px solid var(--danger);
+    color:var(--danger);
+    background-color:transparent;
+}
+
+.outline-primary{
+    border: 1px solid var(--btn-primary);
+    color:var(--btn-primary);
+    background-color:transparent;
+}
+
+.outline-secondary{
+    border: 1px solid var(--secondary);
+    color:var(--secondary);
+    background-color:transparent;
+}
+
+.btn-hover:hover{
+    opacity:.7;
+}
+
+.btn-icon{
+    display:flex;
+    align-items: center;
+}
+
+.btn-icon ion-icon{
+    font-size:1.8rem;
+    margin-right:8px;
+}
