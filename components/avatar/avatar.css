@@ -1,1 +1,77 @@
 @import url('../css/shared.css');
+
+.avatar{
+    border-radius:50%;
+    height:5rem;
+    width:5rem;
+}
+
+.sm{
+    width:4rem;
+    height:4rem;
+}
+
+.m{
+    width:5rem;
+    height:5rem;
+}
+
+.lg{
+    width:7rem;
+    height:7rem;
+}
+
+.xl{
+    width:10rem;
+    height:10rem;
+}
+
+.square{
+    border-radius: 6px;
+}
+
+.stacked > img{
+    margin:-.6rem;
+    box-shadow: -6px 0 0 white;
+}
+
+.busy , .available , .offline{
+    position:relative;
+}
+
+
+.busy::after{
+    position:absolute;
+    bottom:.2em;
+    right:.2em;
+    content:"";
+    height:1.3rem;
+    width:1.3rem;
+    border-radius:50%;
+    box-shadow: -2px -1px 0 white;
+    background-color: red;
+}
+
+.available::after{
+    position:absolute;
+    bottom:.2em;
+    right:.2em;
+    content:"";
+    height:1.3rem;
+    width:1.3rem;
+    border-radius:50%;
+    box-shadow: -2px -1px 0 white;
+    background-color: green;
+}
+
+.offline::after{
+    position:absolute;
+    bottom:1%;
+    right:1%;
+    content:"";
+    height:1.3rem;
+    width:1.3rem;
+    border-radius:50%;
+    box-shadow: -2px -1px 0 white;
+    background-color: grey;
+}

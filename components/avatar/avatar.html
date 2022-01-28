@@ -12,7 +12,6 @@
 
     <!-- Google Font import End -->
     <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./avatar.css">
 
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -20,6 +19,11 @@
 
     <!-- Ion Icon import End -->
 
+    <!-- HighlightJs import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+    <link rel="stylesheet" href="./avatar.css">
     <title>Knight's Watch UI | Avatar</title>
 </head>
 <body>
@@ -97,8 +101,189 @@
                     </ul>
                 </nav>
             </div>
+            
             <div class="main-area">
                 
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Avatar
+                    </h3>
+                    <p class="intro-para">
+                        Avatars are usually used as profile pictures in any website or can be clubbed to show user availability status. They are usually circular in shape. Avatars can be used to give recognisable visual identity.
+                    </p>
+                </div>
+                
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Sized Avatars
+                    </h4>
+                    <p>
+                        These are the different sizes of avatars that can be used in your website.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>sm (4rem) | m (5rem) | lg (7rem) | xl (10rem)</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                            <img class="sm" src="https://picsum.photos/id/237/200/300" alt="Badge">
+                            <img class="m" src="https://picsum.photos/id/1005/200/300" alt="Badge">
+                            <img class="lg" src="https://picsum.photos/id/1012/200/300" alt="Badge">
+                            <img class="xl" src="https://picsum.photos/id/1/200/300" alt="Badge">
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;img class="sm" src="imgage-source" alt=" Badge 1"&gt;
+
+                        &lt;img class="m" src="imgage-source" alt="Badge 2"&gt;
+
+                        &lt;img class="lg" src="imgage-source" alt="Badge 3"&gt;
+
+                        &lt;img class="xl" src="imgage-source" alt="Badge 4"&gt;
+
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Profile Avatars
+                    </h4>
+                    <p>
+                        Profile Avatars can be created using the class 'avatar'. You can also size them using sized class as used above.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>avatar</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                            <img class="avatar" src="https://picsum.photos/id/237/200/300" alt="Badge">
+                            <img class="avatar sm" src="https://picsum.photos/id/1005/200/300" alt="Badge">
+                            <img class="avatar lg" src="https://picsum.photos/id/1012/200/300" alt="Badge">
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                            &lt;img class="avatar" src="image-source" alt="Badge 1"&gt;
+                            &lt;img class="avatar sm" src="image-source" alt="Badge 2"&gt;
+                            &lt;img class="avatar lg" src="image-source" alt="Badge 3"&gt;
+
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Square Avatars
+                    </h4>
+                    <p>
+                        Square Avatars are rounded from their each corners.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>square</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                            <img class="avatar square" src="https://picsum.photos/id/237/200/300" alt="Badge">
+                            <img class=" avatar square sm" src="https://picsum.photos/id/1005/200/300" alt="Badge">
+                            <img class="avatar square lg" src="https://picsum.photos/id/1012/200/300" alt="Badge">
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                            &lt;img class="avatar square" src="image-source" alt="Badge 1"&gt;
+                            &lt;img class="avatar square sm" src="image-source" alt="Badge 2"&gt;
+                            &lt;img class="avatar square lg" src="image-source" alt="Badge 3"&gt;
+
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Stacked Avatars
+                    </h4>
+                    <p>
+                        Stacked Avatars are used to club more than 1 avatars as an single representation.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>stacked</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="stacked">
+                            <img class="avatar" src="https://picsum.photos/id/237/200/300" alt="Badge">
+                            <img class=" avatar" src="https://picsum.photos/id/1005/200/300" alt="Badge">
+                            <img class="avatar" src="https://picsum.photos/id/1012/200/300" alt="Badge">
+                        </div>
+                        
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                            &lt;!-- Wrap thses elements inside a container with class 'stacked' --&gt;
+                            &lt;div class="stacked"&gt;
+                                &lt;img class="avatar" src="https://picsum.photos/id/237/200/300" alt="Badge"&gt;
+                                &lt;img class=" avatar" src="https://picsum.photos/id/1005/200/300" alt="Badge"&gt;
+                                &lt;img class="avatar" src="https://picsum.photos/id/1012/200/300" alt="Badge"&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Status Avatars
+                    </h4>
+                    <p>
+                        These avatars are used to show availability of the user.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>busy | available | offline</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="busy">
+                            <img class="avatar" src="https://picsum.photos/id/237/200/300" alt="Badge">
+                        </div>
+                        
+                        <div class="available">
+                            <img class="avatar sm" src="https://picsum.photos/id/1005/200/300" alt="Badge">
+                        </div>
+
+                        <div class="offline">
+                            <img class="avatar square lg" src="https://picsum.photos/id/1012/200/300" alt="Badge">
+                        </div>
+
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                            &lt;div class="busy"&gt;
+                                &lt;img class="avatar" src="https://picsum.photos/id/237/200/300" alt="Badge"&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="available"&gt;
+                                &lt;img class="avatar sm" src="https://picsum.photos/id/1005/200/300" alt="Badge"&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="offline"&gt;
+                                &lt;img class="avatar square lg" src="https://picsum.photos/id/1012/200/300" alt="Badge"&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
             </div>
         </main>
         <footer>
@@ -116,5 +301,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

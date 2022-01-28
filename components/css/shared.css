@@ -31,10 +31,9 @@ html{
     color:var(--text-primary);
 }
 
-.container{
-    max-width: 120rem;
-    width:80%;
-    margin:auto;
+img{
+    height: 100%;
+    width: 100%;
 }
 
 ul li{
@@ -48,6 +47,12 @@ a{
 }
 
 /* Landing Page Styles */
+
+.container{
+    max-width: 120rem;
+    width:80%;
+    margin:auto;
+}
 
 header{
     padding: 3.2rem;
@@ -206,6 +211,7 @@ nav{
 .main-area{
     flex : 0 1 75%;
     padding:2.4rem;
+    padding-bottom:0;
 }
 
 .main-heading{
@@ -224,13 +230,8 @@ nav{
 
 .seperator{
     padding-bottom: 3.2rem;
-    border-bottom: 1.4px solid var(--hr-color);
+    border-bottom: .4px solid var(--hr-color);
     margin-bottom: 4.8rem;
-}
-
-.seperator:last-child{
-    border:none;
-    margin-bottom: 3.2rem;
 }
 
 .sub-heading{
@@ -251,11 +252,73 @@ nav{
     width:80%;
     display: flex;
     justify-content:center;
+    align-items:center;
     background-color:#f1f3f5;
     margin: 2.4rem auto;
     padding:2.4rem;
     height: max-content;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+                rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    border-radius: 4px;
 }
+
+.example > *{
+    margin:0 1.2rem;
+}
+
+ .seperator .usage-area {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin:  0 3.6rem ;
+    width: max-content;
+    background-color: var(--text-primaryLight);
+    color:var(--text-primaryDark);
+    justify-content: space-around;
+}
+
+.usage-area span{
+    font-weight: 700;
+    padding: 0 1.2rem;
+}
+
+pre code.highlight-code{
+    display: flex;
+    padding: 4.8rem;
+    font-size: 1.4rem;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    gap:1rem;
+    margin:auto;
+}
+
+.hljs-deletion, 
+.hljs-name, 
+.hljs-section, 
+.hljs-selector-tag, 
+.hljs-subst {
+    color: #e06c75;
+}
+
+.hljs-attr, 
+.hljs-number, 
+.hljs-selector-attr, 
+.hljs-selector-class, 
+.hljs-selector-pseudo, 
+.hljs-template-variable, 
+.hljs-type, 
+.hljs-variable {
+    color: #d19a66;
+}
+
+.hljs-addition, 
+.hljs-attribute, 
+.hljs-meta-string, 
+.hljs-regexp, 
+.hljs-string {
+    color: #98c379;
+}
+
 
 /* Main area styling for each page End */
 
