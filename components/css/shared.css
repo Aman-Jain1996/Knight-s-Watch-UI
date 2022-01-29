@@ -136,6 +136,8 @@ nav{
     }
 }
 
+/* Landing Page Styles End */
+
 
 .main{
     display: flex;
@@ -144,18 +146,16 @@ nav{
     position: relative;
 }
 
+
+/* Left side Navigation list */
+
 .left-navigation{
-    padding: 3.6rem 0 ;
+    padding: 2.4rem 0 ;
     height:80vh;
     flex: 0 0 25%;
     position:sticky;
     overflow-y:auto;
     top:0;
-
-}
-
-.main-area{
-    flex : 0 1 75%;
 }
 
 .left-nav-list{
@@ -198,4 +198,136 @@ nav{
     font-size:1.6rem;
 }
 
+/* Left side Navigation list End */
 
+
+/* Main area styling for each page  */
+
+.main-area{
+    flex : 0 1 75%;
+    padding:2.4rem;
+}
+
+.main-heading{
+    font-size:3rem;
+    font-weight: 700;
+    color:var(--text-primaryDark);
+    margin-bottom:2.4rem;
+}
+
+.intro-para{
+    font-size:1.8rem;
+    font-weight:400;
+    line-height: 1.3em;
+    padding: 0 1.6rem;
+}
+
+.seperator{
+    padding-bottom: 3.2rem;
+    border-bottom: 1.4px solid var(--hr-color);
+    margin-bottom: 4.8rem;
+}
+
+.seperator:last-child{
+    border:none;
+    margin-bottom: 3.2rem;
+}
+
+.sub-heading{
+    font-size:2.4rem;
+    font-weight:600;
+    margin-bottom:2.4rem;
+    color:var(--text-primaryDark);
+}
+
+.sub-heading ~ p{
+    font-size:1.6rem;
+    font-weight:400;
+    line-height: 1.3em;
+    padding: 1.2rem 1.6rem;
+}
+
+.example{
+    width:80%;
+    display: flex;
+    justify-content:center;
+    background-color:#f1f3f5;
+    margin: 2.4rem auto;
+    padding:2.4rem;
+    height: max-content;
+}
+
+/* Main area styling for each page End */
+
+
+/* Footer for each page  */
+
+footer{
+    display: flex;
+    width:75%;
+    margin-left:auto;
+    padding:2.4rem 4.8rem;
+    margin-bottom: 3.6rem;
+    font-size:1.6rem;
+}
+
+footer .left-link{
+    font-weight: 600;
+}
+
+footer .right-link{
+    margin-left:auto;
+    font-weight: 600;
+}
+
+:is(.right-link,.left-link) a{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+footer span{
+    margin:0 .5rem;
+}
+
+footer ion-icon{
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+footer ion-icon:hover{
+    color:var(--btn-primary);
+    transform:scale(1.4);
+}
+
+/* Footer for each page End */
+
+/* Left Nav Scrollbar styling */
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-button{
+    background : #555 ;
+    opacity: .6;
+}
+
+/* width */
+.left-navigation::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Left Nav Scrollbar styling End */
