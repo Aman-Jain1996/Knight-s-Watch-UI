@@ -121,9 +121,10 @@ nav{
     visibility: visible;
 }
 
-.nav-left a img:hover{
+.nav-left a img{
     animation: logo 1s ease-in-out;
 }
+
 
 @keyframes logo {
     0%{
@@ -402,6 +403,7 @@ footer ion-icon:hover{
 /* Icons Styling Start */
 
 ion-icon{
+    cursor: pointer;
     font-size: 3.6rem;
 }
 

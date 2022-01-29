@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
+    
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./card.css">
-
+    
     <!-- Ion Icon import -->
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
     <!-- Ion Icon import End -->
 
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+    
+    <link rel="stylesheet" href="./card.css">
     <title>Knight's Watch UI | Card</title>
 </head>
 <body>
@@ -98,7 +107,297 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Cards
+                    </h3>
+                    <p class="intro-para">
+                        Cards provide an easy and modular way to show information related to anything with some images or some action buttons.
+                    </p>
+                </div>
                 
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Simple Card
+                    </h4>
+                    <p>
+                        This type of card usually contains text related to some product with a little description.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>card</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="card">
+                            <p class="card-heading">
+                                Batman
+                            </p>
+                            <p class="card-description">
+                                Batman is a superhero who appears in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger.
+                            </p>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="card"&gt;
+                            &lt;p class="card-heading"&gt;
+                                Batman
+                            &lt;/p&gt;
+
+                            &lt;p class="card-description"&gt;
+                                Batman is a superhero who appears in American comic books 
+                                published by DC Comics. The character was created by 
+                                artist Bob Kane and writer Bill Finger.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Imaged Card
+                    </h4>
+                    <p>
+                        This type of card usually contains text related to some product with a little description along with image.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>imaged-card</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="card image-card">
+                                <img src="https://picsum.photos/id/119/300/200" alt="Product Image">
+                            <p class="card-heading">
+                                Heading
+                            </p>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptatum sed earum amet, mollitia laborum culpa? Totam, sunt debitis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="card image-card"&gt;
+                            &lt;img src="image-source" alt="Product Image"&gt;
+
+                            &lt;p class="card-heading"&gt;
+                                Heading
+                            &lt;/p&gt;
+
+                            &lt;p class="card-description"&gt;
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nisi nulla voluptatum sed earum amet,
+                                mollitia laborum culpa? Totam, sunt debitis.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Header Card
+                    </h4>
+                    <p>
+                        This type of card usually contains text related to some product with a header first then an image and followed by little description.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>header-card | icon-card</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="card header-card">
+                                <img src="https://picsum.photos/id/119/300/200" alt="Product Image">
+                            <p class="card-heading">
+                                Heading
+                            </p>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptatum sed earum amet, mollitia laborum culpa? Totam, sunt debitis.
+                            </p>
+                        </div>
+
+                        <div class="card icon-card">
+                            <img src="https://picsum.photos/id/119/300/200" alt="Product Image">
+                            <p class="card-heading">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                Heading
+                            </p>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptatum sed earum amet, mollitia laborum culpa? Totam, sunt debitis.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="card header-card"&gt;
+                            &lt;img src="image-source" alt="Product Image"&gt;
+
+                            &lt;p class="card-heading"&gt;
+                                Heading
+                            &lt;/p&gt;
+                            
+                            &lt;p class="card-description"&gt;
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nisi nulla voluptatum sed earum amet,
+                                mollitia laborum culpa? Totam, sunt debitis.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+
+
+                            &lt;!-- Icon card --&gt;
+
+                        &lt;div class="card icon-card"&gt;
+                            &lt;img src="image-source" alt="Product Image"&gt;
+
+                            &lt;p class="card-heading"&gt;
+                                &lt;ion-icon name="person-circle-outline"&gt;&lt;/ion-icon&gt;
+                                Heading
+                            &lt;/p&gt;
+                            
+                            &lt;p class="card-description"&gt;
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nisi nulla voluptatum sed earum amet,
+                                mollitia laborum culpa? Totam, sunt debitis.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Card with badge
+                    </h4>
+                    <p>
+                        This type of card usually contains text related to some product with a little description along with image.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>badged-card</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="card badged-card">
+                            <img src="https://picsum.photos/id/119/300/200" alt="Product Image">
+                            <p class="badge-item">Limited stock</p>
+                            <p class="card-heading">
+                                Heading
+                            </p>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla voluptatum sed earum amet, mollitia laborum culpa? Totam, sunt debitis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="card badged-card"&gt;
+                            &lt;img src="image-source" alt="Product Image"&gt;
+
+                            &lt;p class="badge-item"&gt;Limited stock&lt;/p&gt;
+                            &lt;p class="card-heading"&gt;
+                                Heading
+                            &lt;/p&gt;
+
+                            &lt;p class="card-description"&gt;
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nisi nulla voluptatum sed earum amet,
+                                mollitia laborum culpa? Totam, sunt debitis.
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        e-Commerce Card
+                    </h4>
+                    <p>
+                        eCommerce Card is used to display the products details i.e., Product Name, Image, badge, Price, Discount and stock.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>ecom-card</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="card ecom-card">
+                            <img src="../../assets/images/IPhone.jpg" alt="Product Image">
+
+                            <p class="badge-item">New Arrival</p>
+
+                            <p class="wishlist-icon">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </p>
+
+                            <p class="manufacturer">
+                                Apple
+                            </p>
+
+                            <p class="item-name">
+                                Apple Iphone 12 (64Gb)
+                            </p>
+
+                            <p class="price">
+                                Rs. 59499
+                                <span class="mrp">Rs. 69999</span>
+                                <span class="discount">(15% off)</span>
+                            </p>
+
+                            <div class="action-container">
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+                                <ion-icon name="share-social"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="card ecom-card"&gt;
+                            &lt;img src="image-source" alt="Product Image"&gt;
+
+                            &lt;p class="badge-item"&gt;New Arrival&lt;/p&gt;
+
+                            &lt;p class="wishlist-icon"&gt;
+                                &lt;ion-icon name="heart-outline"&gt;&lt;/ion-icon&gt;
+                            &lt;/p&gt;
+
+                            &lt;p class="manufacturer"&gt;
+                                Apple
+                            &lt;/p&gt;
+
+                            &lt;p class="item-name"&gt;
+                                Apple Iphone 12 (64Gb)
+                            &lt;/p&gt;
+
+                            &lt;p class="price"&gt;
+                                Rs. 59499
+                                &lt;span class="mrp"&gt;Rs. 69999&lt;/span&gt;
+                                &lt;span class="discount"&gt;(15% off)&lt;/span&gt;
+                            &lt;/p&gt;
+
+                            &lt;button class="btn btn-primary"&gt;Add to Cart&lt;/button&gt;
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
             </div>
         </main>
         <footer>
@@ -116,5 +415,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

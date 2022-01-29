@@ -1,1 +1,149 @@
 @import url('../css/shared.css');
+@import url('../button/button.css');
+
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid var(--secondary);
+    background-color: #fff;
+    max-width: 30rem;
+    width:100%;
+    border-radius: 4px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px ,
+                rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+
+.card-heading{
+    font-size: 2.4rem;
+    font-weight:600;
+    color:var(--text-primaryDark);
+    padding:1.4rem;
+    padding-bottom: 0;
+}
+
+.card-description{
+    padding:1.4rem;
+    font-size: 1.2rem;
+    font-weight:500;
+    color:var(--text-primaryDark);
+    margin-bottom:1rem;
+}
+
+.imaged-card img{
+    background-position: top left;
+    border-radius: 4px 4px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+.header-card .card-heading{
+    order:-1;
+    padding-bottom:1.4rem
+}
+
+.icon-card .card-heading{
+    order:-1;
+    display:flex;
+    align-items: center;
+    gap:1.4rem;
+    padding-bottom:1.4rem;
+}
+
+.badged-card{
+    position: relative;
+}
+
+.ecom-card{
+    position: relative;
+}
+
+.badge-item{
+    position: absolute;
+    top:5%;
+    left:-2%;
+    background-color: var(--danger);
+    padding: 8px;
+    color:var(--text-white);
+    font-size:1.2rem;
+}
+
+.ecom-card .wishlist-icon{
+    position: absolute;
+    top:2%;
+    right:2%;
+    margin: 8px;
+    color:var(--text-white);
+    font-size:2.4rem;
+}
+
+.ecom-card .wishlist-icon ion-icon{
+    font-size:2.4rem;
+}
+
+.ecom-card .wishlist-icon:hover{
+    transform: scale(1.1);
+}
+
+.ecom-card .manufacturer{
+    padding: 1.2rem;
+    font-size:1.2rem;
+}
+
+.ecom-card .item-name{
+    padding: 1.2rem;
+    font-size:1.6rem;
+    color:var(--text-primaryDark);
+    font-weight:600;
+    padding-top: 0;
+}
+
+.ecom-card .price{
+    margin-right:auto;
+    width:80%;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    padding: 1.2rem;
+    font-size:1.4rem;
+    color:var(--text-primaryDark);
+    font-weight:500;
+    padding-top: 0;
+}
+
+.ecom-card .price .mrp{
+    font-size:1.4rem;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.ecom-card .price .discount{
+    font-size:1.4rem;
+    font-weight: 400;
+    color:var(--danger)
+}
+
+.ecom-card .btn{
+    margin:1rem;
+}
+
+.ecom-card .action-container{
+    display: flex;
+    align-items: center;
+}
+
+.ecom-card .action-container ion-icon{
+    font-size:2.4rem;
+    margin: 1.4rem;
+    margin-left:auto;
+    padding:5px;
+    border-radius:50%;
+}
+
+.ecom-card .action-container ion-icon:hover{
+    background-color:var(--text-primaryLight);
+    color:var(--text-primaryDark);
+    font-weight: 700;
+}
+
+
