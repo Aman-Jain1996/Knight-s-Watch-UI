@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./list.css">
 
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -20,6 +21,13 @@
 
     <!-- Ion Icon import End -->
 
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+
+    <link rel="stylesheet" href="./list.css">
     <title>Knight's Watch UI | List</title>
 </head>
 <body>
@@ -98,7 +106,191 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Lists
+                    </h3>
+                    <p class="intro-para">
+                        Lists are continuous, vertical indexes of text or images. Normal use case include listing of different types under one category.
+                    </p>
+                </div>
                 
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Simple List Groups
+                    </h4>
+                    <p>
+                        Input fields are most used type of input field to get some data from user and they usually come with some labels.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>list | list-disc | list-square </span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        
+                        <ul class="list">
+                            <label for="" class="list-heading">Categories</label>
+                            <li>Category 1</li>
+                            <li>Category 2</li>
+                            <li>Category 3</li>
+                        </ul>
+                    
+                        <ul class="list list-disc">
+                            <label for="" class="list-heading">Categories</label>
+                            <li>Category 1</li>
+                            <li>Category 2</li>
+                            <li>Category 3</li>
+                        </ul>
+                    
+                    
+                        <ul class="list list-square">
+                            <label for="" class="list-heading">Categories</label>
+                            <li>Category 1</li>
+                            <li>Category 2</li>
+                            <li>Category 3</li>
+                        </ul>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                            &lt;ul class="list"&gt;
+                                &lt;label for=""&gt;Categories&lt;/label&gt;
+                                    &lt;li&gt;Category 1&lt;/li&gt;
+                                    &lt;li&gt;Category 2&lt;/li&gt;
+                                    &lt;li&gt;Category 3&lt;/li&gt;
+                            &lt;/ul&gt;
+                            
+
+                            &lt;ul class="list list-disc"&gt;
+                                &lt;label for=""&gt;Categories&lt;/label&gt;
+                                    &lt;li&gt;Category 1&lt;/li&gt;
+                                    &lt;li&gt;Category 2&lt;/li&gt;
+                                    &lt;li&gt;Category 3&lt;/li&gt;
+                            &lt;/ul&gt;
+
+
+                            &lt;ul class="list list-square"&gt;
+                                &lt;label for=""&gt;Categories&lt;/label&gt;
+                                    &lt;li&gt;Category 1&lt;/li&gt;
+                                    &lt;li&gt;Category 2&lt;/li&gt;
+                                    &lt;li&gt;Category 3&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Nested Lists
+                    </h4>
+                    <p>
+                        Nested lists are usually used for navigation purpose in a webpage
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>'list' with 'list-nested'</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <ul class="list">
+                            <label for="" class="list-heading">Categories</label>
+                            <li>Category 1</li>
+                            <li>Category 2</li>
+                            <li class="list-nested">
+                                <p>Category 3</p>
+                                <ul>
+                                    <li>Category 3-i</li>
+                                    <li>Category 3-ii</li>
+                                    <li>Category 3-iii</li>
+                                </ul>
+                            </li>
+                            <li>Category 4</li>
+                        </ul>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;ul class="list"&gt;
+
+                            &lt;label for="" class="list-heading" &gt;Categories&lt;/label&gt;
+                            &lt;li&gt;Category 1&lt;/li&gt;
+                            &lt;li&gt;Category 2&lt;/li&gt;
+
+                            &lt;li class="list-nested"&gt;
+                                &lt;p&gt;Category 3&lt;/p&gt;
+
+                                &lt;ul&gt;
+                                    &lt;li&gt;Category 3-i&lt;/li&gt;
+                                    &lt;li&gt;Category 3-ii&lt;/li&gt;
+                                    &lt;li&gt;Category 3-iii&lt;/li&gt;
+                                &lt;/ul&gt;
+
+                            &lt;/li&gt;
+                            &lt;li&gt;Category 4&lt;/li&gt;
+
+                        &lt;/ul&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Select List Group
+                    </h4>
+                    <p>
+                        Select list group can be used for filtering data in a webpage based on checked values.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>We will be using 'list' along with 'checkbox label' used in input component</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <ul class="list">
+                            <label for="" class="list-heading">Categories</label>
+                            <label for="checkbox">
+                                <input type="checkbox" checked>
+                                <li>Category 1</li>
+                            </label>
+                            <label for="checkbox">
+                                <input type="checkbox" checked>
+                                <li>Category 2</li>
+                            </label>
+                            <label for="checkbox">
+                                <input type="checkbox" checked>
+                                <li>Category 3</li>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;ul class="list"&gt;
+                            &lt;label for="" class="list-heading"&gt;Categories&lt;/label&gt;
+
+                            &lt;label for="checkbox"&gt;
+                                &lt;input type="checkbox" checked&gt;
+                                &lt;li&gt;Category 1&lt;/li&gt;
+                            &lt;/label&gt;
+
+                            &lt;label for="checkbox"&gt;
+                                &lt;input type="checkbox" checked&gt;
+                                &lt;li&gt;Category 2&lt;/li&gt;
+                            &lt;/label&gt;
+
+                            &lt;label for="checkbox"&gt;
+                                &lt;input type="checkbox" checked&gt;
+                                &lt;li&gt;Category 3&lt;/li&gt;
+                            &lt;/label&gt;
+                        &lt;/ul&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
             </div>
         </main>
         <footer>
@@ -116,5 +308,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

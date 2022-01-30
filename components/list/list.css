@@ -1,1 +1,56 @@
 @import url('../css/shared.css');
+@import url('../input/input.css');
+
+.list{
+    width:30rem;
+    min-height:20rem;
+    background-color:var(--white);
+    border-radius:4px;
+}
+
+.list .list-heading{
+    padding:1.2rem;
+    display: block;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.list li{
+    cursor: pointer;
+    margin:2.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    list-style-position: inside;
+}
+
+.list li:not(.list-nested):hover{
+    color: var(--btn-primary);
+    font-weight:600;
+}
+
+.list-disc li{
+    list-style-type: disc;
+}
+
+.list-square li{
+    list-style-type: square;
+}
+
+.list-nested{
+    list-style-type:none;
+}
+
+.list-nested p:hover{
+    color: var(--btn-primary);
+    font-weight:600;
+}
+
+label[for^='checkbox']{
+    margin:1.6rem;
+}
+
+label[for^='checkbox'] li{
+    margin: 0;
+}
