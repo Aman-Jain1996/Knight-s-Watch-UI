@@ -1,1 +1,14 @@
 @import url('../css/shared.css');
+
+.img-square{
+    width:15rem;
+    height:15rem;
+    object-fit:cover;
+}
+
+.img-circle{
+    width:15rem;
+    height:15rem;
+    border-radius:50%;
+    object-fit:cover;
+}
