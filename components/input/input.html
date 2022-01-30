@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./input.css">
 
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+    
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
     <!-- Ion Icon import End -->
-
+    
+    <link rel="stylesheet" href="./input.css">
     <title>Knight's Watch UI | Inputs</title>
 </head>
 <body>
@@ -98,7 +106,161 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Inputs
+                    </h3>
+                    <p class="intro-para">
+                        Input fields come into picture in the webpage where we require any information from the user and save it for futher use.
+                    </p>
+                </div>
                 
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Input Text with labels
+                    </h4>
+                    <p>
+                        Input fields are most used type of input field to get some data from user and they usually come with some labels.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>input-group | input-group err</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div>
+                            <div class="input-group">
+                                <label class="label" for="name">Username </label>
+                                <input type="text" name="name" id="name">
+                            </div>
+
+                            <div class="input-group err">
+                                <label class="label" for="password">Password</label>
+                                <input type="text" name="password" id="password">
+                                <p class="error-message">Wrong Password</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                &lt;div class="input-group"&gt;
+                    &lt;label class="label" for="name"&gt;Username &lt;/label&gt;
+                    &lt;input type="text" name="name" id="name"&gt;
+                &lt;/div&gt;
+
+
+                &lt;div class="input-group err"&gt;
+                    &lt;label class="label" for="password"&gt;Password&lt;/label&gt;
+                    &lt;input type="text" name="password" id="password"&gt;
+                    &lt;p class="error-message"&gt;Wrong Password&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Radio buttons
+                    </h4>
+                    <p>
+                        Radio buttons allow the user to select one value from a set values. In this input fields , the below classes are added in HTML itself without any class
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>checked | disabled</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <label for="radio-1">
+                            <input type="radio" name="radio" id="radio-1">
+                            Radio 1
+                        </label>
+
+                        <label for="radio-2" >
+                            <input type="radio" name="radio" id="radio-2" checked>
+                            Radio 2
+                        </label>
+
+                        <label for="radio-3" >
+                            <input type="radio" name="radio" id="radio-3" disabled>
+                            Radio 3
+                        </label>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                    &lt;label for="radio-1"&gt;
+                        &lt;input type="radio" name="radio" id="radio-1"&gt;
+                        Radio 1
+                    &lt;/label&gt;
+
+                    &lt;label for="radio-2" &gt;
+                        &lt;input type="radio" name="radio" id="radio-2" checked&gt;
+                        Radio 2
+                    &lt;/label&gt;
+
+                    &lt;label for="radio-3" &gt;
+                        &lt;input type="radio" name="radio" id="radio-3" disabled&gt;
+                        Radio 3
+                    &lt;/label&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Checkbox
+                    </h4>
+                    <p>
+                        Checkboxes allow the user to select one or more items from a set.
+                        <br/>
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>checked | disabled</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <label for="checkbox-1">
+                            <input type="checkbox" name="checkbox" id="checkbox-1">
+                            Checkbox 1
+                        </label>
+
+                        <label for="checkbox-2" >
+                            <input type="checkbox" name="checkbox" id="checkbox-2" checked>
+                            Checkbox 2
+                        </label>
+
+                        <label for="checkbox-3" >
+                            <input type="checkbox" name="checkbox" id="checkbox-3" disabled>
+                            Checkbox 3
+                        </label>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                &lt;label for="checkbox-1"&gt;
+                    &lt;input type="checkbox" name="checkbox" id="checkbox-1"&gt;
+                    Checkbox 1
+                &lt;/label&gt;
+
+                &lt;label for="checkbox-2" &gt;
+                    &lt;input type="checkbox" name="checkbox" id="checkbox-2" checked&gt;
+                    Checkbox 2
+                &lt;/label&gt;
+                
+                &lt;label for="checkbox-3" &gt;
+                    &lt;input type="checkbox" name="checkbox" id="checkbox-3" disabled&gt;
+                    Checkbox 3
+                &lt;/label&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
             </div>
         </main>
         <footer>
@@ -116,5 +278,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
