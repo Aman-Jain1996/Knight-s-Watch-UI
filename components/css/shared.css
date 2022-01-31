@@ -20,6 +20,7 @@ Spacing system (px)  - 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  
     --warning:#facc15;
     --secondary:#737373;
     --white : #fff;
+    --primary:#4c6ef5;
 }
 
 /* ----------Resets----------- */
@@ -261,6 +262,7 @@ nav{
     width:80%;
     display: flex;
     flex-wrap:wrap;
+    gap:1.2rem;
     justify-content:center;
     align-items:center;
     background-color:#f1f3f5;

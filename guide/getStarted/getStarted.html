@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="shortcut icon" href="../../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -17,16 +20,22 @@
 
     <!-- HighlightJs import End -->
 
-    <link rel="shortcut icon" href="../../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./getStarted.css">
-
+    
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
     <!-- Ion Icon import End -->
-
+    
+    <link rel="stylesheet" href="./getStarted.css">
     <title>Knight's Watch UI | Get Started</title>
+
+    <style>
+        .custom-style {
+            background-color: aquamarine;
+            color:black;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -112,7 +121,7 @@
                     Introduction to Knight's Watch
                     </h3>
                     <p class="intro-para">
-                        Sparrow is an open source styling framework, which helps Developers to use best styles and components, by using pre-defined classnames. Sparrow helps you to quickly build your Dream Project, by focusing much on Functionality, because we take care of your Designs.
+                        Knight's Watch is an open source styling library, which helps Developers to use best styles and components to create their styling by using pre-defined classnames. It helps you to quickly build your Dream Project, by focusing more on Functionality and leave your design worries on us.
                     </p>
                 </div>
                 
@@ -121,8 +130,13 @@
                     Installation Guide
                     </h4>
                     <p>
-                        In order to introduce Sparrow to your project, Copy the Link given below and paste it in the <strong>&lt;head&gt; </strong> tag of your html, above all other style sheets.
+                        In order to use Knight's Watch components in your project, Copy the link given below and paste it in the <strong>&lt;head&gt; </strong> tag of your html to get started with the classes.
                     </p>
+
+                    <pre><code class="language-html">
+
+                    </code></pre>
+                    
                 </div>
 
                 <div class="seperator">
@@ -130,15 +144,32 @@
                     Customizing Themes
                     </h4>
                     <p>
-                        Although Sparrow aims at satisfying it's user's need, as much as possible, There are times, when the pre-defined styles are not sufficient
+                        Although all your styling issues have been taken care off and all the best practices are followed , but we respect our User's need and all the components in this library are made keeping this is mind. There are times, when the pre-defined styles are not sufficient
                     </p>
                     <p>
-                        In order to override Sparrow's base classes, users can add their own class to the pre-existing classes, and style them seperately, as shown below.
+                        In order to override the predefined  base classes, users can add their own class to the pre-existing classes, and style them seperately, as shown below.
                     </p>
                     <div class="example">
-                        <button>Custom Button</button>
+                        <button class="btn custom-style">Custom Button</button>
                     </div>
-                    <pre><code class="language-html">...</code></pre>
+                    <pre><code class="language-html highlight-code">
+                    &lt;!-- Default styling from the button component --&gt;
+
+                    &lt;button class="btn"&gt;Custom Button&lt;/button&gt;
+
+
+                    &lt;!-- Overriding styling using custom classes--&gt;
+
+                    &lt;style&gt;
+
+                         .custom-style {
+                            background-color: aquamarine;
+                            color:black;
+                        }
+
+                    &lt;/style&gt;
+
+                    </code></pre>
                 </div>
                 
             </div>
