@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./button.css">
 
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -20,6 +21,13 @@
 
     <!-- Ion Icon import End -->
 
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+
+    <link rel="stylesheet" href="./button.css">
     <title>Knight's Watch UI | Button</title>
 </head>
 <body>
@@ -98,6 +106,199 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Buttons
+                    </h3>
+                    <p class="intro-para">
+                        Buttons are the soul of an interactive Web Application. Buttons allow users to take actions on UI and make choices with a single tap.
+                    </p>
+                </div>
+                
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Default Button
+                    </h4>
+                    <p>
+                        They can be used using 'btn' class and we can also have variants of buttons using different variant classes.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>btn-primary | -secondary | -success | -error</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <button class="btn">Default</button>
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-success">Success</button>
+                        <button class="btn btn-error">Error</button>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;button class="btn"&gt;Default&lt;/button&gt;
+
+                        &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+
+                        &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+
+                        &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+
+                        &lt;button class="btn btn-error"&gt;Error&lt;/button&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Outlined Button
+                    </h4>
+                    <p>
+                        Outlined buttons don't have any background they just have borders of different colors based on variations.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>outline-default | -primary | -secondary | -success | -error</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <button class="btn outline-default">Default</button>
+                        <button class="btn outline-primary">Primary</button>
+                        <button class="btn outline-secondary">Secondary</button>
+                        <button class="btn outline-success">Success</button>
+                        <button class="btn outline-error">Error</button>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;button class="btn outline-default"&gt;Default&lt;/button&gt;
+
+                        &lt;button class="btn outline-primary"&gt;Primary&lt;/button&gt;
+
+                        &lt;button class="btn outline-secondary"&gt;Secondary&lt;/button&gt;
+
+                        &lt;button class="btn outline-success"&gt;Success&lt;/button&gt;
+
+                        &lt;button class="btn outline-error"&gt;Error&lt;/button&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Rounded Button
+                    </h4>
+                    <p>
+                        Rounded buttons are usually rounded from all their corners.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>round-sm (4px) | -m (6px) | -lg (8px) | -xl (10px)</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <button class="btn">Default</button>
+                        <button class="btn outline-primary rounded-sm">Primary</button>
+                        <button class="btn btn-secondary rounded-m">Secondary</button>
+                        <button class="btn outline-success rounded-lg">Success</button>
+                        <button class="btn btn-error rounded-xl">Error</button>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                &lt;button class="btn"&gt;Default&lt;/button&gt;
+
+                &lt;button class="btn outline-primary rounded-sm"&gt;Primary&lt;/button&gt;
+
+                &lt;button class="btn btn-secondary rounded-m"&gt;Secondary&lt;/button&gt;
+
+                &lt;button class="btn outline-success rounded-lg"&gt;Success&lt;/button&gt;
+                
+                &lt;button class="btn btn-error rounded-xl"&gt;Error&lt;/button&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Button with a hover state
+                    </h4>
+                    <p>
+                        Rounded buttons are usually rounded from all their corners. Hover mouse on the below buttons to see the change.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>btn-hover</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <button class="btn btn-hover">Default</button>
+                        <button class="btn outline-primary rounded-sm btn-hover">Primary</button>
+                        <button class="btn btn-secondary rounded-m btn-hover">Secondary</button>
+                        <button class="btn outline-success rounded-lg btn-hover">Success</button>
+                        <button class="btn btn-error rounded-xl btn-hover">Error</button>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+        &lt;button class="btn btn-hover"&gt;Default&lt;/button&gt;
+
+        &lt;button class="btn outline-primary rounded-sm btn-hover"&gt;Primary&lt;/button&gt;
+
+        &lt;button class="btn btn-secondary rounded-m btn-hover"&gt;Secondary&lt;/button&gt;
+
+        &lt;button class="btn outline-success rounded-lg btn-hover"&gt;Success&lt;/button&gt;
+        
+        &lt;button class="btn btn-error rounded-xl btn-hover"&gt;Error&lt;/button&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Icon Button
+                    </h4>
+                    <p>
+                        Icon Buttons can be created by adding icon as a child to parent button. Use the 'btn' class followed by 'btn-icon'.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>btn-icon</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <button class="btn btn-icon">
+                            <ion-icon name="save"></ion-icon>
+                            Default
+                        </button>
+                        <button class="btn btn-primary btn-icon">
+                            <ion-icon name="arrow-down"></ion-icon>
+                            Primary
+                        </button>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                            &lt;button class="btn btn-icon"&gt;
+                                &lt;ion-icon name="save"&gt;&lt;/ion-icon&gt;
+                                Default
+                            &lt;/button&gt;
+
+                            
+                            &lt;button class="btn btn-primary btn-icon"&gt;
+                                &lt;ion-icon name="arrow-down"&gt;&lt;/ion-icon&gt;
+                                Primary
+                            &lt;/button&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
                 
             </div>
         </main>
@@ -116,5 +317,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

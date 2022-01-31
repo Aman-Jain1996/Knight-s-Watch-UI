@@ -1,1 +1,85 @@
 @import url('../css/shared.css');
+@import url('.././avatar/avatar.css');
+
+.badge{
+    position: relative;
+    width:max-content;
+}
+
+.badge > div{
+    border-radius: 50%;
+    position: absolute;
+}
+
+.online{
+    height:1.2rem;
+    width:1.2rem;
+    bottom:1%;
+    right:1%;
+    background-color:var(--success);
+    border:2px solid white;
+}
+
+.sleep{
+    height:1.2rem;
+    width:1.2rem;
+    bottom:1%;
+    right:1%;
+    background-color:grey;
+    border:2px solid white;
+}
+
+.dnd{
+    height:1.2rem;
+    width:1.2rem;
+    bottom:1%;
+    right:1%;
+    background-color:var(--danger);
+    border:2px solid white;
+}
+
+.numbered{
+    padding: 1.2rem;
+    top: -20%;
+    right: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    background-color:var(--text-primary);
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.2rem;
+}
+
+.numbered-success{
+    padding: 1.2rem;
+    top: -20%;
+    right: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    background-color:var(--success);
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.2rem;
+}
+
+.numbered-danger{
+    padding: 1.2rem;
+    top: -20%;
+    right: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    background-color:var(--danger);
+    font-size: 1.2rem;
+}
+
