@@ -1,1 +1,86 @@
 @import url('../css/shared.css');
+
+.alert{
+    width:100%;
+    padding:2.4rem;
+    color:var(--text-white);
+    font-size: 1.4rem;
+}
+
+.example{
+    flex-direction:column;
+}
+
+.example > *{
+    margin:1.2rem 0;
+}
+
+.primary{
+    background-color: var(--btn-primary);
+    border-radius: .5rem;
+}
+
+.danger{
+    background-color: var(--danger);
+    border-radius: .5rem;
+}
+
+.success{
+    background-color: var(--success);
+    border-radius: .5rem;
+}
+
+.warning{
+    background-color: var(--warning);
+    border-radius: .5rem;
+}
+
+.secondary{
+    background-color: var(--secondary);
+    border-radius: .5rem;
+}
+
+.outline-primary{
+    border: 1px solid var(--btn-primary);
+    border-radius: .5rem;
+    color:var(--btn-primary);
+}
+
+.outline-danger{
+    border: 1px solid var(--danger);
+    border-radius: .5rem;
+    color:var(--danger);
+}
+
+.outline-success{
+    border: 1px solid var(--success);
+    border-radius: .5rem;
+    color:var(--success);
+}
+
+.outline-warning{
+    border: 1px solid var(--warning);
+    border-radius: .5rem;
+    color:var(--warning);
+}
+
+.outline-secondary{
+    border:1px solid var(--secondary);
+    border-radius: .5rem;
+    color:var(--secondaryl);
+}
+
+.dismiss-primary , .dismiss-secondary , .dismiss-warning , 
+.dismiss-success , .dismiss-danger{
+    position: relative;
+}
+
+:is(.dismiss-primary , .dismiss-secondary , .dismiss-warning , 
+.dismiss-success , .dismiss-danger)::after{
+    position:absolute;
+    content:'X';
+    top:1rem;
+    right:1rem;
+    cursor:pointer;
+    font-weight: 400;
+}

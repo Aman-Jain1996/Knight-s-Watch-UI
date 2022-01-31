@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./alert.css">
 
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!-- Ion Icon import End -->
+
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+
+    <link rel="stylesheet" href="./alert.css">
 
     <title>Knight's Watch UI | Alert</title>
 </head>
@@ -98,7 +107,206 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Alert
+                    </h3>
+                    <p class="intro-para">
+                        An alert is used to display an important message in a way that attracts the user's attention and it provides contextual feedback messages for typical user actions with the handful alert messages.
+                    </p>
+                </div>
                 
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Simple Alert
+                    </h4>
+                    <p>
+                        Simple alerts are used to display an important message. They can be created using 'avatar' class and can be clubbed with different variants for variations.
+                        <p class="usage-area">
+                            Variant-Usage : 
+                            <span>primary | danger | success | warning | secondary</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                            <div class="alert primary">
+                                <strong>Primary!</strong> This is a Primary Alert - Check it now!
+                            </div>
+
+                            <div class="alert danger">
+                                <strong>Danger!</strong> This is a Danger Alert - Check it now!
+                            </div>
+
+                            <div class="alert success">
+                                <strong>Success!</strong> This is a Success Alert - Check it now!
+                            </div>
+
+                            <div class="alert warning">
+                                <strong>Warning!</strong> This is a Warning Alert - Check it now!
+                            </div>
+
+                            <div class="alert secondary">
+                                <strong>Secondary!</strong> This is a Secondary Alert - Check it now!
+                            </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+            &lt;div class="alert primary"&gt;
+                &lt;strong&gt;Primary! &lt;/strong&gt;This is a Primary Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert danger"&gt;
+                &lt;strong&gt;Danger!&lt;/strong&gt; This is a Danger Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert success"&gt;
+                &lt;strong&gt;Success!&lt;/strong&gt; This is a Success Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert warning"&gt;
+                &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert secondary"&gt;
+                &lt;strong&gt;Secondary!&lt;/strong&gt; This is a Secondary Alert - Check it now!
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Outlined Alert
+                    </h4>
+                    <p>
+                        Outlined alerts are variations around simpe alert just they have coloured border.They can be created using 'alert' class and can be clubbed with different variants for variations.
+                        <p class="usage-area">
+                            Variant-Usage : 
+                            <span>outline-primary | -danger | -success | -warning | -secondary</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                            <div class="alert outline-primary">
+                                <strong>Primary!</strong> This is a Primary Alert - Check it now!
+                            </div>
+
+                            <div class="alert outline-danger">
+                                <strong>Danger!</strong> This is a Danger Alert - Check it now!
+                            </div>
+
+                            <div class="alert outline-success">
+                                <strong>Success!</strong> This is a Success Alert - Check it now!
+                            </div>
+
+                            <div class="alert outline-warning">
+                                <strong>Warning!</strong> This is a Warning Alert - Check it now!
+                            </div>
+
+                            <div class="alert outline-secondary">
+                                <strong>Secondary!</strong> This is a Secondary Alert - Check it now!
+                            </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+            &lt;div class="alert outline-primary"&gt;
+                &lt;strong&gt;Primary! &lt;/strong&gt;This is a Primary Alert - Check it now!
+            &lt;/div&gt;
+
+            
+            &lt;div class="alert outline-danger"&gt;
+                &lt;strong&gt;Danger!&lt;/strong&gt; This is a Danger Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert outline-success"&gt;
+                &lt;strong&gt;Success!&lt;/strong&gt; This is a Success Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert outline-warning"&gt;
+                &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert outline-secondary"&gt;
+                &lt;strong&gt;Secondary!&lt;/strong&gt; This is a Secondary Alert - Check it now!
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Dismissible Alert
+                    </h4>
+                    <p>
+                        Dismissible alerts are the variation around the simple alert that comes with close action button .They can be created using 'avatar' class and can be clubbed with different variants for variations.
+                        <p class="usage-area">
+                            Variant-Usage : 
+                            <span>dismiss-primary | -danger | -success | -warning | -secondary</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                            <div class="alert primary dismiss-primary">
+                                <strong>Primary!</strong> This is a Primary Alert - Check it now!
+                            </div>
+
+                            <div class="alert outline-danger dismiss-danger">
+                                <strong>Danger!</strong> This is a Danger Alert - Check it now!
+                            </div>
+
+                            <div class="alert success dismiss-success">
+                                <strong>Success!</strong> This is a Success Alert - Check it now!
+                            </div>
+
+                            <div class="alert outline-warning dismiss-warning">
+                                <strong>Warning!</strong> This is a Warning Alert - Check it now!
+                            </div>
+
+                            <div class="alert secondary dismiss-secondary">
+                                <strong>Secondary!</strong> This is a Secondary Alert - Check it now!
+                            </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+            &lt;div class="alert primary dismiss-primary"&gt;
+                &lt;strong&gt;Primary! &lt;/strong&gt;This is a Primary Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert outline-danger dismiss-danger"&gt;
+                &lt;strong&gt;Danger!&lt;/strong&gt; This is a Danger Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert success dismiss-success"&gt;
+                &lt;strong&gt;Success!&lt;/strong&gt; This is a Success Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert outline-warning dismiss-warning"&gt;
+                &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert - Check it now!
+            &lt;/div&gt;
+
+
+            &lt;div class="alert secondary dismiss-secondary"&gt;
+                &lt;strong&gt;Secondary!&lt;/strong&gt; This is a Secondary Alert - Check it now!
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
             </div>
         </main>
         <footer>
@@ -116,5 +324,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
