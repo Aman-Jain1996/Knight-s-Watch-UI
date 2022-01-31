@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
+    
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./toast.css">
 
+    
     <!-- Ion Icon import -->
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
     <!-- Ion Icon import End -->
 
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+    
+    <link rel="stylesheet" href="./toast.css">
     <title>Knight's Watch UI | Toast</title>
 </head>
 <body>
@@ -98,7 +108,109 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Toasts
+                    </h3>
+                    <p class="intro-para">
+                        Toast display messages related to an interaction happened between user and the website. They usually stay on the screen for 2-3 seconds and then disappear.<br/><br/>
+                        Toast can be used to show success messages, warnings or errors.
+                    </p>
+                </div>
                 
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Success Toast
+                    </h4>
+                    <p>
+                        Used to show success messages on user action to notify them.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>toast | toast-success | toast-error | toast-warn</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="toast">
+                            <p class="toast-message">Your Password is changed successfully!</p>
+                        </div>
+
+                        <div class="toast toast-success">
+                            <p class="toast-message">Your Password is changed successfully!</p>
+                        </div>
+
+                        <div class="toast toast-warn">
+                            <p class="toast-message">Your Password is changed successfully!</p>
+                        </div>
+
+                        <div class="toast toast-error">
+                            <p class="toast-message">Your Password is changed successfully!</p>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                &lt;div class="toast"&gt;
+                    &lt;p class="toast-message"&gt;Your Password is changed successfully!&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class="toast toast-success"&gt;
+                    &lt;p class="toast-message"&gt;Your Password is changed successfully!&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class="toast toast-warn"&gt;
+                    &lt;p class="toast-message"&gt;Your Password is changed successfully!&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class="toast toast-error"&gt;
+                    &lt;p class="toast-message"&gt;Your Password is changed successfully!&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Dismissible Toast
+                    </h4>
+                    <p>
+                        Used to show success messages on user action to notify them with dismiss icon.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>toast-dismiss</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="toast toast-dismiss">
+                            <p class="toast-message">Your Password is changed successfully!</p>
+                            <span>X</span>
+                        </div>
+
+                        <div class="toast toast-success toast-dismiss">
+                            <p class="toast-message">Your Password is changed successfully!</p>
+                            <span>X</span>
+                        </div>
+
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                &lt;div class="toast toast-dismiss"&gt;
+                    &lt;p class="toast-message"&gt;Your Password is changed successfully!&lt;/p&gt;
+                    &lt;span&gt;X&lt;/span&gt;
+                &lt;/div&gt;
+
+                
+                &lt;div class="toast toast-success toast-dismiss"&gt;
+                    &lt;p class="toast-message"&gt;Your Password is changed successfully!&lt;/p&gt;
+                    &lt;span&gt;X&lt;/span&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
             </div>
         </main>
         <footer>
@@ -109,9 +221,10 @@
                 </a>
             </div>
             <div class="right-link">
-
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
