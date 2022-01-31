@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
+
+    <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Font import End -->
+
+    <!-- Ion Icon import -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Ion Icon import End -->
+
+    <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+
+    <link rel="stylesheet" href="./navigation.css">
+    <title>Knight's Watch UI | Navigation</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="../../index.html"><img src="../../assets/images/logo.jpg" alt="Logo image"></a>
+                    <a href="../../index.html" class="logo-heading">Knight's Watch</a>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li class="nav-pills">
+                            <a href="../../guide/getStarted/getStarted.html">Documentation</a>
+                        </li>
+                        <li class="nav-pills">
+                            <a href="#">Examples</a>
+                        </li>
+                        <li class="nav-pills">
+                            <a href="#">Releases</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="left-navigation">
+                <nav class="left-nav-list">
+                    <label>Get Started</label>
+                    <ul>
+                        <li>
+                            <a href="../../guide/getStarted/getStarted.html">Installation Guide</a>
+                        </li>
+                        <li>
+                            <a href="../../guide/colors/colors.html">Colors</a>
+                        </li>
+                        <li>
+                            <a href="../../guide/typography/typography.html">Typography</a>
+                        </li>
+                        <li>
+                            <a href="../../guide/contributions/contributions.html">Git Contibutions</a>
+                        </li>
+                    </ul>
+
+                    <label>Components</label>
+                    <ul>
+                        <li>
+                            <a href="../alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="../avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="../badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="../button/button.html">Button</a>
+                        </li>
+                        <li>
+                            <a href="../card/card.html" >Card</a>
+                        </li>
+                        <li>
+                            <a href="../image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="../input/input.html" >Input</a>
+                        </li>
+                        <li>
+                            <a href="../list/list.html">List</a>
+                        </li>
+                        <li>
+                            <a class="active" href="#">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="../toast/toast.html">Toast</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Navigation
+                    </h3>
+                    <p class="intro-para">
+                        Navigation component can be used inside 'nav' tag to give redirection to different pages with-in / out of website.
+                    </p>
+                </div>
+                
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Simple Nav
+                    </h4>
+                    <p>
+                        This type of navigation just have diffrent links within it that are equally apart.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>nav</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="nav">
+                            <span><a href="">Nav Link-1</a></span>
+                            <span><a href="">Nav Link-2</a></span>
+                            <span><a href="">Nav Link-3</a></span>
+                            <span><a href="">Nav Link-4</a></span>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="nav"&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-1&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-2&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-3&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-4&lt;/a&gt;&lt;/span&gt;
+
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Dropdown Nav
+                    </h4>
+                    <p>
+                        This type of navigation shows up when an element in nav is hovered. <br/><br/>
+                        <strong>Note :</strong> Hover over 'Nav Link-2' to see dropdown navigation.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>hover-nav</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="nav">
+                            <span><a href="">Nav Link-1</a></span>
+                            <span class="hover-element">
+                                <a href="" >Nav Link-2</a>
+                                <div class="hover-nav">
+                                    <span>
+                                        <a href="">Nav Link-2.i</a>
+                                    </span>
+                                    <span>
+                                        <a href="">Nav Link-2.ii</a>
+                                    </span>
+                                    <span>
+                                        <a href="">Nav Link-2.iii</a>
+                                    </span>
+                                </div>
+                            </span>
+                            <span><a href="">Nav Link-3</a></span>
+                            <span><a href="">Nav Link-4</a></span>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="nav"&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-1&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span class="hover-element"&gt;
+                                &lt;a href="" &gt;Nav Link-2&lt;/a&gt;
+
+                                &lt;!-- hover-nav --&gt;
+                                
+                                &lt;div class="hover-nav"&gt;
+
+                                    &lt;span&gt;
+                                        &lt;a href=""&gt;Nav Link-2.i&lt;/a&gt;
+                                    &lt;/span&gt;
+
+                                    &lt;span&gt;
+                                        &lt;a href=""&gt;Nav Link-2.ii&lt;/a&gt;
+                                    &lt;/span&gt;
+
+                                    &lt;span&gt;
+                                        &lt;a href=""&gt;Nav Link-2.iii&lt;/a&gt;
+                                    &lt;/span&gt;
+
+                                &lt;/div&gt;
+
+                            &lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-3&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-4&lt;/a&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="left-link">
+                <a href="../list/list.html">
+                    <ion-icon name="chevron-back"></ion-icon>
+                    <span>List</span>
+                </a>
+            </div>
+            <div class="right-link">
+                <a href="../toast/toast.html">
+                    <span>Toast</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </a> 
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
