@@ -50,10 +50,11 @@
     padding-left:1.4rem;
 }
 
-label[for^='radio-'] , label[for^='checkbox-']{
+label[for^='radio'] , label[for^='checkbox']{
     display: flex;
     align-items: center;
     font-size:1.2rem;
     gap:.5rem;
+    margin-left:1.2rem;
 }
 
