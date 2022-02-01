@@ -58,3 +58,17 @@
     }
 
 }
+
+@media only screen and (max-width:480px){
+
+    .color-palette > div{
+        max-width: 30%;
+        width:15rem;
+    }
+
+    .color-palette{
+        gap:1.2rem;
+        justify-content:stretch;
+    }
+
+}

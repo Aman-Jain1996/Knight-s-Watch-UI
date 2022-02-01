@@ -39,7 +39,6 @@ p[class^='text']{
 div[class^='para']{
     font-size: 1.4rem;
     width:60%;
-    /* box-sizing: content-box; */
 }
 
 .para{
@@ -48,4 +47,12 @@ div[class^='para']{
 
 .para-padding{
     padding:2.4rem;
+}
+
+
+@media screen and (max-width:480px){
+
+    div[class^='para']{
+        width:100%;
+    }
 }

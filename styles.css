@@ -101,6 +101,7 @@ main p{
 
     .main-para{
         width:90%;
+        font-size: 1.8rem;
         line-height: 1.2em;
     }
 
@@ -108,4 +109,65 @@ main p{
         gap:1.6rem;
     }
 
+}
+
+@media only screen and (max-width:650px){
+
+    nav{
+        flex-direction: row;
+    }
+
+    .nav-right-small{
+        justify-content:space-around;
+        padding:0;
+        width:max-content;
+    }
+
+    .nav-right-small ul{
+        margin:0;
+    }
+
+    main{
+        padding-top:2.4rem;
+    }
+    
+    main h1{
+        font-size: 3.6rem;
+        width:90%;
+    }
+
+    .main-para{
+        font-size: 1.6rem;
+        width:100%;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    main{
+        padding-top:2.4rem;
+    }
+    
+    main h1{
+        font-size: 2.8rem;
+        width:100%;
+    }
+
+    nav{
+        flex-direction: column;
+        gap:1.6rem;
+    }
+
+    .nav-right-small{
+        justify-content:space-around;
+    }
+
+    .nav-right-small ul{
+        margin:0;
+    }
+
+    .button-container a{
+        max-width:max-content;
+    }
 }
