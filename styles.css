@@ -1,4 +1,4 @@
-@import url('./components/css/shared.css');
+@import url('./components.css');
 
 body{
     min-height: 100vh;
@@ -54,13 +54,13 @@ main p{
 
 .button-container .button-link--primary{
     font-weight: 600;
-    background-color: var(--btn-primaryLight);
-    color:var(--text-primaryDark)
+    background-color: var(--btn-primary);
+    color:var(--white)
 }
 
 .button-container .button-link--primary:hover{
-    background-color: var(--btn-primary);
-    color: var(--text-white);
+    background-color: var(--btn-primaryLight);
+    color: var(--text-primaryDark);
 }
 
 .button-container a:hover{

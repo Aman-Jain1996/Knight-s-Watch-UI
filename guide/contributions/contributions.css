@@ -1,1 +1,6 @@
 @import url('../../components/css/shared.css');
+
+.seperator a{
+    color:var(--primary);
+    text-decoration:underline;
+}
