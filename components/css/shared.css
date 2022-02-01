@@ -440,7 +440,7 @@ ion-icon{
     }
 
     .usage-area span{
-        padding:0;
+        flex-basis:70%;
     }
 }
 
@@ -469,4 +469,10 @@ ion-icon{
     ion-icon{
         font-size: 2.4rem;
     }
+
+    .seperator .usage-area {
+        max-width: 100%;
+        margin:8px;
+    }
+
 }
