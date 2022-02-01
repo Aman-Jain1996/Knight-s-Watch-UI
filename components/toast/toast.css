@@ -36,3 +36,9 @@
     cursor: pointer;
     color:initial;
 }
+
+@media only screen and (max-width:900px){
+    .toast{
+        flex: 0 1 20rem;
+    }
+}

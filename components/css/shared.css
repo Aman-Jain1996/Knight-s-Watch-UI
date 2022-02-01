@@ -58,7 +58,7 @@ a{
 
 .container{
     max-width: 120rem;
-    width:80%;
+    width:90%;
     margin:auto;
 }
 
@@ -88,11 +88,15 @@ nav{
     height:6rem;
 }
 
-.nav-right ul{
+:is(.nav-right,.nav-right-small) ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap:3.6rem;
+}
+
+.nav-right-small{
+    display:none;
 }
 
 .nav-right ul li{
@@ -259,10 +263,9 @@ nav{
 }
 
 .example{
-    width:100%;
+    width:95%;
     display: flex;
     flex-wrap:wrap;
-    gap:1.2rem;
     justify-content:center;
     align-items:center;
     background-color:#f1f3f5;
@@ -278,11 +281,14 @@ nav{
     margin:0 1.2rem;
 }
 
+.example button{
+    margin: 1.2rem;
+}
+
  .seperator .usage-area {
     display: flex;
     align-items: center;
     font-weight: 500;
-    margin:  0 3.6rem ;
     width: max-content;
     background-color: var(--text-primaryLight);
     color:var(--text-primaryDark);
@@ -297,7 +303,7 @@ nav{
 pre code.highlight-code{
     padding:2.4rem 0;
     font-size: 1.6rem;
-    width:90%;
+    width:100%;
     margin:auto;
 }
 
@@ -413,3 +419,54 @@ ion-icon{
 }
 
 /* Icons Styling End */
+
+
+
+/* -----------------  Responsiveness ---------------------- */
+
+@media screen and (max-width:900px){
+    
+    .container{
+        width:95%;
+    }
+
+    pre code.highlight-code{
+        width:100%;
+    }
+
+    .seperator .usage-area {
+        max-width: 90%;
+        margin:8px;
+    }
+
+    .usage-area span{
+        padding:0;
+    }
+}
+
+@media screen and (max-width:650px){
+    
+    .left-navigation{
+        display:none;
+    }
+
+    .main-area{
+        flex: 1 100%;
+    }
+
+    .nav-right{
+        display:none;
+    }
+
+    .nav-right-small{
+        display:block;
+    }
+
+    footer{
+        width:100%;
+    }
+
+    ion-icon{
+        font-size: 2.4rem;
+    }
+}
