@@ -1,1 +1,51 @@
 @import url('../../components/css/shared.css');
+
+.heading-sm{
+    font-size:1rem;
+}
+
+.heading-m{
+    font-size:1.4rem;
+}
+
+.heading-lg{
+    font-size: 2.4rem;
+}
+
+.heading-xl{
+    font-size: 3.6rem;
+}
+
+p[class^='text']{
+    font-size:1.6rem;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-err{
+    color:var(--danger);
+}
+
+.text-grey{
+    color:grey;
+}
+
+div[class^='para']{
+    font-size: 1.4rem;
+    width:60%;
+    /* box-sizing: content-box; */
+}
+
+.para{
+    padding:1.2rem;
+}
+
+.para-padding{
+    padding:2.4rem;
+}
