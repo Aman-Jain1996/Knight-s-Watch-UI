@@ -216,6 +216,7 @@ nav{
 /* Main area styling for each page  */
 
 .main-area{
+    width:80%;
     flex : 0 1 75%;
     padding:2.4rem;
     padding-bottom:0;

@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Font import End -->
-    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./image.css">
 
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    
     <!-- Ion Icon import End -->
 
+     <!-- HighlightJs import -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+
+    <!-- HighlightJs import End -->
+    
+    <link rel="stylesheet" href="./image.css">
     <title>Knight's Watch UI | Images</title>
 </head>
 <body>
@@ -98,7 +105,98 @@
                 </nav>
             </div>
             <div class="main-area">
+                <div class="seperator">
+                    <h3 class="main-heading">
+                    Images
+                    </h3>
+                    <p class="intro-para">
+                        Images are the main ingredient of any website that looks visually appealing and can provide the visual information related to anything. Images in this component library expand upto the width of the container they are in.
+                    </p>
+                </div>
                 
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Square Image
+                    </h4>
+                    <p>
+                        Square Images are images with equal height and width and by default they have a dimension of 150px X 150px.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>img-square</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <img class="img-square" src="../../assets/images/cycle.jpg" alt="man riding a cycle" >
+                        <img class="img-square" src="../../assets/images/car.jpg" alt="car image" >
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                &lt;img class="img-square" src="image-source" alt="man riding a cycle" &gt;
+                            
+                &lt;img class="img-square" src="image-source" alt="car image" &gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Rounded Image
+                    </h4>
+                    <p>
+                        Rounded Images have rounded bordres and they have dimension of 150px X 150px.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>img-circle</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <img class="img-circle" src="../../assets/images/cycle.jpg" alt="man riding a cycle">
+                        <img class="img-circle" src="../../assets/images/car.jpg" alt="car image" >
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                &lt;img class="img-circle" src="image-source" alt="man riding a cycle"&gt;
+
+                &lt;img class="img-circle" src="image-source" alt="car image" &gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Responsive Image
+                    </h4>
+                    <p>
+                        Responsive Images will take the width and height of its parent container and they also respond if srceen-size is changed.
+                        <br/> Note : Resize the browser window, to see responsive image work.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>img-responsive</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div>
+                            <img class="img-responsive" src="../../assets/images/cycle.jpg" alt="man riding a cycle">
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+            &lt;div&gt;
+                &lt;img class="img-responsive" src="image-source" alt="man riding a cycle"&gt;
+            &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
             </div>
         </main>
         <footer>
@@ -116,5 +214,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
