@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
 
     <!-- Google Font import  -->
@@ -17,17 +18,17 @@
     <!-- Ion Icon import -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
     <!-- Ion Icon import End -->
 
-     <!-- HighlightJs import -->
+    <!-- HighlightJs import -->
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
 
     <!-- HighlightJs import End -->
-    
-    <link rel="stylesheet" href="./image.css">
-    <title>Knight's Watch UI | Images</title>
+
+    <link rel="stylesheet" href="./navigation.css">
+    <title>Knight's Watch UI | Navigation</title>
 </head>
 <body>
     <div class="container">
@@ -90,16 +91,16 @@
                             <a href="../card/card.html" >Card</a>
                         </li>
                         <li>
-                            <a href="#" class="active">Image</a>
+                            <a href="../image/image.html">Image</a>
                         </li>
                         <li>
-                            <a href="../input/input.html">Input</a>
+                            <a href="../input/input.html" >Input</a>
                         </li>
                         <li>
                             <a href="../list/list.html">List</a>
                         </li>
                         <li>
-                            <a href="../Navigation/index.html">Navigation</a>
+                            <a class="active" href="#">Navigation</a>
                         </li>
                         <li>
                             <a href="../toast/toast.html">Toast</a>
@@ -107,94 +108,124 @@
                     </ul>
                 </nav>
             </div>
+
             <div class="main-area">
                 <div class="seperator">
                     <h3 class="main-heading">
-                    Images
+                    Navigation
                     </h3>
                     <p class="intro-para">
-                        Images are the main ingredient of any website that looks visually appealing and can provide the visual information related to anything. Images in this component library expand upto the width of the container they are in.
+                        Navigation component can be used inside 'nav' tag to give redirection to different pages with-in / out of website.
                     </p>
                 </div>
                 
                 <div class="seperator">
                     <h4 class="sub-heading">
-                        Square Image
+                        Simple Nav
                     </h4>
                     <p>
-                        Square Images are images with equal height and width and by default they have a dimension of 150px X 150px.
+                        This type of navigation just have diffrent links within it that are equally apart.
                         <p class="usage-area">
                             Class-Usage : 
-                            <span>img-square</span>
+                            <span>nav</span>
                         </p>
                     </p>
 
                     <div class="example">
-                        <img class="img-square" src="../../assets/images/cycle.jpg" alt="man riding a cycle" >
-                        <img class="img-square" src="../../assets/images/car.jpg" alt="car image" >
-                    </div>
-
-                    <pre>
-                        <code class="language-html highlight-code">
-                &lt;img class="img-square" src="image-source" alt="man riding a cycle" &gt;
-                            
-                &lt;img class="img-square" src="image-source" alt="car image" &gt;
-                        </code>
-                    </pre>
-
-                </div>
-
-                <div class="seperator">
-                    <h4 class="sub-heading">
-                        Rounded Image
-                    </h4>
-                    <p>
-                        Rounded Images have rounded bordres and they have dimension of 150px X 150px.
-                        <p class="usage-area">
-                            Class-Usage : 
-                            <span>img-circle</span>
-                        </p>
-                    </p>
-
-                    <div class="example">
-                        <img class="img-circle" src="../../assets/images/cycle.jpg" alt="man riding a cycle">
-                        <img class="img-circle" src="../../assets/images/car.jpg" alt="car image" >
-                    </div>
-
-                    <pre>
-                        <code class="language-html highlight-code">
-                &lt;img class="img-circle" src="image-source" alt="man riding a cycle"&gt;
-
-                &lt;img class="img-circle" src="image-source" alt="car image" &gt;
-                        </code>
-                    </pre>
-
-                </div>
-
-                <div class="seperator">
-                    <h4 class="sub-heading">
-                        Responsive Image
-                    </h4>
-                    <p>
-                        Responsive Images will take the width and height of its parent container and they also respond if srceen-size is changed.
-                        <br/> Note : Resize the browser window, to see responsive image work.
-                        <p class="usage-area">
-                            Class-Usage : 
-                            <span>img-responsive</span>
-                        </p>
-                    </p>
-
-                    <div class="example">
-                        <div>
-                            <img class="img-responsive" src="../../assets/images/cycle.jpg" alt="man riding a cycle">
+                        <div class="nav">
+                            <span><a href="">Nav Link-1</a></span>
+                            <span><a href="">Nav Link-2</a></span>
+                            <span><a href="">Nav Link-3</a></span>
+                            <span><a href="">Nav Link-4</a></span>
                         </div>
                     </div>
 
                     <pre>
                         <code class="language-html highlight-code">
-            &lt;div&gt;
-                &lt;img class="img-responsive" src="image-source" alt="man riding a cycle"&gt;
-            &lt;/div&gt;
+                        &lt;div class="nav"&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-1&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-2&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-3&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-4&lt;/a&gt;&lt;/span&gt;
+
+                        &lt;/div&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Dropdown Nav
+                    </h4>
+                    <p>
+                        This type of navigation shows up when an element in nav is hovered. <br/><br/>
+                        <strong>Note :</strong> Hover over 'Nav Link-2' to see dropdown navigation.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>hover-nav</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <div class="nav">
+                            <span><a href="">Nav Link-1</a></span>
+                            <span class="hover-element">
+                                <a href="" >Nav Link-2</a>
+                                <div class="hover-nav">
+                                    <span>
+                                        <a href="">Nav Link-2.i</a>
+                                    </span>
+                                    <span>
+                                        <a href="">Nav Link-2.ii</a>
+                                    </span>
+                                    <span>
+                                        <a href="">Nav Link-2.iii</a>
+                                    </span>
+                                </div>
+                            </span>
+                            <span><a href="">Nav Link-3</a></span>
+                            <span><a href="">Nav Link-4</a></span>
+                        </div>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+                        &lt;div class="nav"&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-1&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span class="hover-element"&gt;
+                                &lt;a href="" &gt;Nav Link-2&lt;/a&gt;
+
+                                &lt;!-- hover-nav --&gt;
+                                
+                                &lt;div class="hover-nav"&gt;
+
+                                    &lt;span&gt;
+                                        &lt;a href=""&gt;Nav Link-2.i&lt;/a&gt;
+                                    &lt;/span&gt;
+
+                                    &lt;span&gt;
+                                        &lt;a href=""&gt;Nav Link-2.ii&lt;/a&gt;
+                                    &lt;/span&gt;
+
+                                    &lt;span&gt;
+                                        &lt;a href=""&gt;Nav Link-2.iii&lt;/a&gt;
+                                    &lt;/span&gt;
+
+                                &lt;/div&gt;
+
+                            &lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-3&lt;/a&gt;&lt;/span&gt;
+
+                            &lt;span&gt;&lt;a href=""&gt;Nav Link-4&lt;/a&gt;&lt;/span&gt;
+                        &lt;/div&gt;
                         </code>
                     </pre>
 
@@ -204,14 +235,14 @@
         </main>
         <footer>
             <div class="left-link">
-                <a href="../card/card.html">
+                <a href="../list/list.html">
                     <ion-icon name="chevron-back"></ion-icon>
-                    <span>Card</span>
+                    <span>List</span>
                 </a>
             </div>
             <div class="right-link">
-                <a href="../input/input.html">
-                    <span>Input</span>
+                <a href="../toast/toast.html">
+                    <span>Toast</span>
                     <ion-icon name="chevron-forward"></ion-icon>
                 </a> 
             </div>
