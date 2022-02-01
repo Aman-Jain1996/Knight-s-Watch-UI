@@ -1,1 +1,59 @@
 @import url('../css/shared.css');
+
+.example > div{
+    width:100%;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.label{
+    font-size:1.2rem;
+    margin-bottom:1.2rem;
+}
+
+.input-group input{
+    background: #fff;
+    height: 3.6rem;
+    border: 1px solid #999;
+    padding: 0.5rem 1rem;
+    font-size:1.2rem;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    transition: .3s all ease;
+    outline: none;
+    border-radius: 2px;
+}
+
+.input-group input:focus{
+    border:1px solid var(--btn-primary);
+}
+
+.err{
+    color:var(--danger);
+}
+
+.err input{
+    outline: none;
+    border:1px solid var(--danger);
+}
+
+.err input:focus{
+    border:1px solid var(--danger);
+}
+
+.error-message{
+    font-size: 1.1rem;
+    padding-left:1.4rem;
+}
+
+label[for^='radio-'] , label[for^='checkbox-']{
+    display: flex;
+    align-items: center;
+    font-size:1.2rem;
+    gap:.5rem;
+}
+
