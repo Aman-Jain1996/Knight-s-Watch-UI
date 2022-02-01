@@ -53,12 +53,16 @@ a{
     cursor: pointer;
 }
 
+body{
+    position: relative;
+}
+
 
 /* Landing Page Styles */
 
 .container{
     max-width: 120rem;
-    width:80%;
+    width:90%;
     margin:auto;
 }
 
@@ -88,11 +92,15 @@ nav{
     height:6rem;
 }
 
-.nav-right ul{
+:is(.nav-right,.nav-right-small) ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap:3.6rem;
+}
+
+.nav-right-small{
+    display:none;
 }
 
 .nav-right ul li{
@@ -149,6 +157,35 @@ nav{
         transform: rotate(0);
     }
 }
+
+/* Option menu for small screens */
+
+.menu-navigation{
+    position: absolute;
+    left:-100%;
+    background-color:var(--white);
+    z-index:10;
+    transition: left 1s ease-in-out;
+    padding:2.4rem 1.2rem;
+    box-shadow: 6px 1px 5px rgba(0,0,0,0.7);
+    overflow-y:auto;
+    height:100vh;
+}
+
+.menu-navigation span{
+    display: flex;
+    margin-left:auto;
+    cursor: pointer;
+}
+
+.open{
+    left:0%;
+}
+
+.option-menu{
+    display:none;
+}
+
 
 /* Landing Page Styles End */
 
@@ -259,10 +296,9 @@ nav{
 }
 
 .example{
-    width:100%;
+    width:95%;
     display: flex;
     flex-wrap:wrap;
-    gap:1.2rem;
     justify-content:center;
     align-items:center;
     background-color:#f1f3f5;
@@ -278,11 +314,14 @@ nav{
     margin:0 1.2rem;
 }
 
+.example button{
+    margin: 1.2rem;
+}
+
  .seperator .usage-area {
     display: flex;
     align-items: center;
     font-weight: 500;
-    margin:  0 3.6rem ;
     width: max-content;
     background-color: var(--text-primaryLight);
     color:var(--text-primaryDark);
@@ -297,7 +336,7 @@ nav{
 pre code.highlight-code{
     padding:2.4rem 0;
     font-size: 1.6rem;
-    width:90%;
+    width:100%;
     margin:auto;
 }
 
@@ -413,3 +452,121 @@ ion-icon{
 }
 
 /* Icons Styling End */
+
+
+
+/* -----------------  Responsiveness ---------------------- */
+
+@media screen and (max-width:900px){
+    
+    .container{
+        width:95%;
+    }
+
+    pre code.highlight-code{
+        width:100%;
+    }
+
+    .seperator .usage-area {
+        max-width: 90%;
+        margin:8px;
+    }
+
+    .usage-area span{
+        flex-basis:70%;
+    }
+}
+
+@media screen and (max-width:650px){
+
+    .nav-left{
+        font-size: 2rem;
+    }
+    
+    .left-navigation{
+        display:none;
+    }
+
+    .main-area{
+        flex: 1 100%;
+        padding:1.2rem;
+    }
+
+    .nav-right{
+        display:none;
+    }
+
+    .nav-right-small{
+        display:flex;
+        width:100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1.2rem 3.6rem;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-right-small ul{
+        gap:3.6rem;
+        margin-left: auto;
+    }
+
+    .option-menu{
+        display: block;
+    }
+
+    footer{
+        width:100%;
+    }
+
+    ion-icon{
+        font-size: 2.4rem;
+    }
+
+    .seperator .usage-area {
+        max-width: 100%;
+        margin:8px;
+    }
+
+    pre code.highlight-code{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    
+    header{
+        padding:1rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .nav-right-small ul{
+        gap:2.4rem;
+        margin-left: auto;
+    }
+
+    .main-heading{
+        font-size:2.4rem;
+    }
+
+    .intro-para{
+        font-size: 1.6rem;
+    }
+
+    .sub-heading{
+        font-size:1.8rem;
+        margin-bottom:1.2rem;
+    }
+
+    .sub-heading ~ p{
+        font-size: 1.4rem;
+    }
+
+    footer{
+        padding:2rem;
+    }
+
+}

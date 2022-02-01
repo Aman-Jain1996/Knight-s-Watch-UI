@@ -54,3 +54,12 @@ label[for^='checkbox']{
 label[for^='checkbox'] li{
     margin: 0;
 }
+
+
+/* -----------------  Responsiveness ---------------------- */
+
+@media only screen and (max-width:900px){
+    .list{
+        width:20rem;
+    }
+}

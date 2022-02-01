@@ -83,3 +83,11 @@
     font-size: 1.2rem;
 }
 
+
+@media only screen and (max-width:764px){
+
+    .badge ion-icon{
+        font-size: 3.6rem;
+    }
+
+}

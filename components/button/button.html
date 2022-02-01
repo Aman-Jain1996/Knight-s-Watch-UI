@@ -28,10 +28,65 @@
     <!-- HighlightJs import End -->
 
     <link rel="stylesheet" href="./button.css">
+    <script defer src="../../index.js"></script>
     <title>Knight's Watch UI | Button</title>
 </head>
 <body>
     <div class="container">
+        <div class="menu-navigation">
+                <nav class="left-nav-list">
+                    <span><ion-icon class="close" name="close"></ion-icon></span>
+                    <label>Get Started</label>
+                    <ul>
+                        <li>
+                            <a href="../../guide/getStarted/getStarted.html">Installation Guide</a>
+                        </li>
+                        <li>
+                            <a href="../../guide/colors/colors.html">Colors</a>
+                        </li>
+                        <li>
+                            <a href="../../guide/typography/typography.html">Typography</a>
+                        </li>
+                        <li>
+                            <a href="../../guide/contributions/contributions.html">Git Contibutions</a>
+                        </li>
+                    </ul>
+
+                    <label>Components</label>
+                    <ul>
+                        <li>
+                            <a href="../alert/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a href="../avatar/avatar.html">Avatar</a>
+                        </li>
+                        <li>
+                            <a href="../badge/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">Button</a>
+                        </li>
+                        <li>
+                            <a href="../card/card.html">Card</a>
+                        </li>
+                        <li>
+                            <a href="../image/image.html">Image</a>
+                        </li>
+                        <li>
+                            <a href="../input/input.html">Input</a>
+                        </li>
+                        <li>
+                            <a href="../list/list.html">List</a>
+                        </li>
+                        <li>
+                            <a href="../navigation/navigation.html">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="../toast/toast.html">Toast</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
         <header>
             <nav>
                 <div class="nav-left">
@@ -41,13 +96,27 @@
                 <div class="nav-right">
                     <ul>
                         <li class="nav-pills">
-                            <a href="../../guide/getStarted/getStarted.html">Documentation</a>
+                            <a href="../../guide/getStarted/getStarted.html" title="Documentation">Documentation</a>
                         </li>
                         <li class="nav-pills">
-                            <a href="#">Examples</a>
+                            <a href="https://www.linkedin.com/in/aman-jain-8082b510a/" title="linkedin">LinkedIn</a>
                         </li>
                         <li class="nav-pills">
-                            <a href="#">Releases</a>
+                            <a href="https://twitter.com/_Aman__Jain" title="twitter">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right-small">
+                    <div class="option-menu open"><ion-icon name="menu"></ion-icon></div>
+                    <ul>
+                        <li class="nav-pills">
+                            <a href="../../guide/getStarted/getStarted.html" title="Documentation"><ion-icon name="book"></ion-icon></a>
+                        </li>
+                        <li class="nav-pills">
+                            <a href="https://www.linkedin.com/in/aman-jain-8082b510a/" title="linkedin"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        </li>
+                        <li class="nav-pills">
+                            <a href="https://twitter.com/_Aman__Jain" title="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
                         </li>
                     </ul>
                 </div>
@@ -140,15 +209,16 @@
 
                     <pre>
                         <code class="language-html highlight-code">
-                        &lt;button class="btn"&gt;Default&lt;/button&gt;
+            &lt;button class="btn"&gt;Default&lt;/button&gt;
 
-                        &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
 
-                        &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+            &lt;button class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
 
-                        &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+            &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
 
-                        &lt;button class="btn btn-error"&gt;Error&lt;/button&gt;
+            &lt;button class="btn btn-error"&gt;Error&lt;/button&gt;
+
                         </code>
                     </pre>
 
@@ -176,15 +246,16 @@
 
                     <pre>
                         <code class="language-html highlight-code">
-                        &lt;button class="btn outline-default"&gt;Default&lt;/button&gt;
+            &lt;button class="btn outline-default"&gt;Default&lt;/button&gt;
 
-                        &lt;button class="btn outline-primary"&gt;Primary&lt;/button&gt;
+            &lt;button class="btn outline-primary"&gt;Primary&lt;/button&gt;
 
-                        &lt;button class="btn outline-secondary"&gt;Secondary&lt;/button&gt;
+            &lt;button class="btn outline-secondary"&gt;Secondary&lt;/button&gt;
 
-                        &lt;button class="btn outline-success"&gt;Success&lt;/button&gt;
+            &lt;button class="btn outline-success"&gt;Success&lt;/button&gt;
 
-                        &lt;button class="btn outline-error"&gt;Error&lt;/button&gt;
+            &lt;button class="btn outline-error"&gt;Error&lt;/button&gt;
+
                         </code>
                     </pre>
 
@@ -212,15 +283,14 @@
 
                     <pre>
                         <code class="language-html highlight-code">
-                &lt;button class="btn"&gt;Default&lt;/button&gt;
+        &lt;button class="btn"&gt;Default&lt;/button&gt;
 
-                &lt;button class="btn outline-primary rounded-sm"&gt;Primary&lt;/button&gt;
+        &lt;button class="btn outline-primary rounded-sm"&gt;Primary&lt;/button&gt;
 
-                &lt;button class="btn btn-secondary rounded-m"&gt;Secondary&lt;/button&gt;
-
-                &lt;button class="btn outline-success rounded-lg"&gt;Success&lt;/button&gt;
-                
-                &lt;button class="btn btn-error rounded-xl"&gt;Error&lt;/button&gt;
+        &lt;button class="btn btn-secondary rounded-m"&gt;Secondary&lt;/button&gt;
+        &lt;button class="btn outline-success rounded-lg"&gt;Success&lt;/button&gt;
+                            
+        &lt;button class="btn btn-error rounded-xl"&gt;Error&lt;/button&gt;
                         </code>
                     </pre>
 
@@ -287,16 +357,15 @@
 
                     <pre>
                         <code class="language-html highlight-code">
-                            &lt;button class="btn btn-icon"&gt;
-                                &lt;ion-icon name="save"&gt;&lt;/ion-icon&gt;
-                                Default
-                            &lt;/button&gt;
-
-                            
-                            &lt;button class="btn btn-primary btn-icon"&gt;
-                                &lt;ion-icon name="arrow-down"&gt;&lt;/ion-icon&gt;
-                                Primary
-                            &lt;/button&gt;
+            &lt;button class="btn btn-icon"&gt;
+                &lt;ion-icon name="save"&gt;&lt;/ion-icon&gt;
+                Default
+            &lt;/button&gt;
+            
+            &lt;button class="btn btn-primary btn-icon"&gt;
+                &lt;ion-icon name="arrow-down"&gt;&lt;/ion-icon&gt;
+                Primary
+            &lt;/button&gt;
                         </code>
                     </pre>
 

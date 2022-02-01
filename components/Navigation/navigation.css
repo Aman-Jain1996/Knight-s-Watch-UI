@@ -48,3 +48,15 @@
                 rgb(27 31 35 / 15%) 0px 0px 0px 1px;
 }
 
+@media screen and (max-width:650px){
+
+    .nav{
+        flex-wrap: wrap;
+    }
+
+    .hover-element:hover .hover-nav{
+        left:20%;
+        width:max-content;
+    }
+}
+

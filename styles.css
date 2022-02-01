@@ -37,9 +37,12 @@ main p{
 .button-container{
     margin:auto;
     width:30rem;
+    max-width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap:1.6rem;
 }
 
 
@@ -68,4 +71,106 @@ main p{
     transform: scale(1.05);
     box-shadow: 0 0 4px;
     border: 2px solid var(--text-primaryDark);
+}
+
+
+/* -----------------  Responsiveness ---------------------- */
+
+@media only screen and (max-width:900px){
+
+    main{
+        padding-top: 0;
+    }
+
+    main h1{
+        font-size: 4.8rem;
+    }
+
+    .main-para{
+        width:90%;
+    }
+
+}
+
+@media only screen and (max-width:764px){
+
+    main{
+        padding-top: 0;
+    }
+
+    main h1{
+        font-size: 3.6rem;
+    }
+
+    .main-para{
+        width:90%;
+        font-size: 1.8rem;
+        line-height: 1.2em;
+    }
+
+    .nav-right ul{
+        gap:1.6rem;
+    }
+
+}
+
+@media only screen and (max-width:650px){
+
+    nav{
+        flex-direction: row;
+    }
+
+    .nav-right-small{
+        justify-content:space-around;
+        padding:0;
+        width:max-content;
+    }
+
+    .nav-right-small ul{
+        margin:0;
+    }
+
+    main{
+        padding-top:2.4rem;
+    }
+    
+    main h1{
+        font-size: 3.6rem;
+        width:90%;
+    }
+
+    .main-para{
+        font-size: 1.6rem;
+        width:100%;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    main{
+        padding-top:2.4rem;
+    }
+    
+    main h1{
+        font-size: 2.8rem;
+        width:100%;
+    }
+
+    nav{
+        flex-direction: column;
+        gap:1.6rem;
+    }
+
+    .nav-right-small{
+        justify-content:space-around;
+    }
+
+    .nav-right-small ul{
+        margin:0;
+    }
+
+    .button-container a{
+        max-width:max-content;
+    }
 }
