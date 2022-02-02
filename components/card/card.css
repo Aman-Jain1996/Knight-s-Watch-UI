@@ -99,8 +99,6 @@
 }
 
 .ecom-card .price{
-    margin-right:auto;
-    width:80%;
     display: flex;
     align-items: center;
     gap:8px;

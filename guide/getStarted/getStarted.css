@@ -1,2 +1,7 @@
 @import url('../../components/css/shared.css');
 @import url('../../components/button/button.css');
+
+.seperator a{
+    color:var(--primary);
+    text-decoration:underline;
+}

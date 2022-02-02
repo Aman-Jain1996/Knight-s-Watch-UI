@@ -131,7 +131,7 @@ main p{
     }
 
     main{
-        padding-top:2.4rem;
+        padding-top:6.4rem;
     }
     
     main h1{
@@ -141,20 +141,21 @@ main p{
 
     .main-para{
         font-size: 1.6rem;
-        width:100%;
+        line-height: 1.4em;
+        width:90%;
+    }
+
+    .button-container{
+        margin-top:3.6rem;
     }
 
 }
 
 @media screen and (max-width:480px){
 
-    main{
-        padding-top:2.4rem;
-    }
-    
     main h1{
         font-size: 2.8rem;
-        width:100%;
+        width:80%;
     }
 
     nav{
