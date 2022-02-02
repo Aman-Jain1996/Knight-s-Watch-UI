@@ -169,7 +169,8 @@ nav{
     padding:2.4rem 1.2rem;
     box-shadow: 6px 1px 5px rgba(0,0,0,0.7);
     overflow-y:auto;
-    height:100vh;
+    min-height:100vh;
+
 }
 
 .menu-navigation span{
@@ -302,6 +303,7 @@ nav{
     justify-content:center;
     align-items:center;
     background-color:#f1f3f5;
+    gap:1.4rem;
     margin: 2.4rem auto;
     padding:2.4rem;
     height: max-content;
@@ -325,7 +327,7 @@ nav{
     width: max-content;
     background-color: var(--text-primaryLight);
     color:var(--text-primaryDark);
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .usage-area span{
@@ -473,7 +475,7 @@ ion-icon{
     }
 
     .usage-area span{
-        flex-basis:70%;
+        flex: 0 1 70%;
     }
 }
 
@@ -526,7 +528,8 @@ ion-icon{
     }
 
     .seperator .usage-area {
-        max-width: 100%;
+        min-width:80%;
+        width:100%;
         margin:8px;
     }
 
@@ -567,6 +570,10 @@ ion-icon{
 
     footer{
         padding:2rem;
+    }
+
+    .usage-area span{
+        flex: 0 auto;
     }
 
 }
