@@ -8,7 +8,6 @@ Knight's Watch UI is a component library which is made with much focus on functi
 
 - HTML
 - CSS
-
 <br>
 
 ## Components available in Knight's Watch
@@ -23,11 +22,9 @@ Knight's Watch UI is a component library which is made with much focus on functi
 8. [List](https://knights-watch-ui.netlify.app/components/list/list.html)
 9. [Navigation](https://knights-watch-ui.netlify.app/components/navigation/navigation.html)
 10. [Toast](https://knights-watch-ui.netlify.app/components/toast/toast.html)
-
 <br>
 
 ---
-<br>
 
 ## Get Started 
 
@@ -46,9 +43,8 @@ To also use ion-icons (which we are using internally), add below line also in yo
 <br>
 
 ---
-<br>
 
-## Happy Building! 
+## 😊Happy Building! 
 
 Live Link - [Knight's Watch UI](https://knights-watch-ui.netlify.app)
 
