@@ -2,6 +2,6 @@
 @import url('../../components/button/button.css');
 
 .seperator a{
-    color:var(--primary);
+    color:#0B2DB7;
     text-decoration:underline;
 }
