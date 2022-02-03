@@ -112,11 +112,11 @@ nav{
     position: relative;
 }
 
-.nav-right ul li:hover{
+.nav-right ul li:not(.download):hover{
     color: var(--text-primaryDark);
 }
 
-.nav-right ul li::before{
+.nav-right ul li:not(.download)::before{
     position:absolute;
     content: "";
     width: 0;
@@ -126,7 +126,7 @@ nav{
     transition: all .5s ease-in-out;
 }
 
-.nav-right ul li:hover::before{
+.nav-right ul li:not(.download):hover::before{
     width: 105%;
     visibility: visible;
 }
@@ -155,6 +155,34 @@ nav{
 
     100%{
         transform: rotate(0);
+    }
+}
+
+/* Animation for download button */
+
+.download{
+    animation: download 1s ease-in-out infinite;
+}
+
+@keyframes download {
+    0%{
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: translateY(10%);
+    }
+
+    50%{
+        transform: translateY(0);
+    }
+
+    75%{
+        transform: translateY(-10%);
+    }
+
+    100%{
+        transform: translateY(0);
     }
 }
 
@@ -236,18 +264,20 @@ nav{
 .left-nav-list ul li{
     margin: 6px 0;
     font-size: 1.4rem;
+    font-weight: 500;
     transition: all .3s ease-in-out;
 }
 
 .left-nav-list ul li:hover{
-    font-weight: 500;
+    font-weight: 600;
     transform: scale(1.1);
     color:var(--text-primaryDark);
 }
 
 .active{
-    color:var(--btn-primary);
+    color:#0B2DB7;
     font-size:1.6rem;
+    font-weight: 600;
 }
 
 /* Left side Navigation list End */
