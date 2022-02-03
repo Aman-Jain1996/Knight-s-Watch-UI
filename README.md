@@ -34,11 +34,15 @@ OR
 
 You can add below lines inside your head section to get started - 
 
-`<link href="https://knights-watch-ui.netlify.app/components.css" rel="stylesheet" type="text/css" />`
+```html
+<link href="https://knights-watch-ui.netlify.app/components.css" rel="stylesheet" type="text/css" />
+```
 
 To also use ion-icons (which we are using internally), add below line also in your head section - 
 
-`<link href="https://knights-watch-ui.netlify.app/components/component_name/component_name.css" rel="stylesheet" type="text/css" />`
+```html
+<link href="https://knights-watch-ui.netlify.app/components/component_name/component_name.css" rel="stylesheet" type="text/css" />
+```
 
 <br>
 
