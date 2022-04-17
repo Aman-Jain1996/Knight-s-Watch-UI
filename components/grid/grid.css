@@ -1,0 +1,14 @@
+@import url("../css/shared.css");
+
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
