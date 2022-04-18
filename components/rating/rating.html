@@ -29,9 +29,10 @@
 
     <!-- HighlightJs import End -->
 
-    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./rating.css">
     <script defer src="../../index.js"></script>
-    <title>Knight's Watch UI | Slider</title>
+    <script defer src="./rating.js"></script>
+    <title>Knight's Watch UI | Rating</title>
 </head>
 <body>
     <div class="container">
@@ -87,10 +88,10 @@
                             <a href="../navigation/navigation.html">Navigation</a>
                         </li>
                         <li>
-                            <a href="../rating/rating.html">Rating</a>
+                            <a href="#" class="active">Rating</a>
                         </li>
                         <li>
-                            <a href="#" class="active" >Slider</a>
+                            <a href="../slider/slider.html" >Slider</a>
                         </li>
                         <li>
                             <a href="../toast/toast.html">Toast</a>
@@ -186,10 +187,10 @@
                             <a href="../navigation/navigation.html">Navigation</a>
                         </li>
                         <li>
-                            <a href="../rating/rating.html">Rating</a>
+                            <a href="#" class="active">Rating</a>
                         </li>
                         <li>
-                            <a href="#" class="active">Slider</a>
+                            <a href="../slider/slider.html">Slider</a>
                         </li>
                         <li>
                             <a href="../toast/toast.html">Toast</a>
@@ -200,43 +201,98 @@
             <div class="main-area">
                 <div class="seperator">
                     <h3 class="main-heading">
-                    Slider
+                    Rating
                     </h3>
                     <p class="intro-para">
-                        Sliders are mainly used when a user need to select from a range of values e.g, price range in E-commerce applications and volume control in our system.
+                        Ratings provide insight about other's opinions and experience for a product, they are widely used in product rating or seeking feedback.
                     </p>
                 </div>
                 
                 <div class="seperator">
                     <h4 class="sub-heading">
-                        Default Slider
+                        Dynamic rating
                     </h4>
                     <p>
                         <p class="usage-area">
                             Class-Usage : 
-                            <span>slider</span>
+                            <span>rating</span>
                         </p>
                     </p>
 
                     <div class="example">
-                        <div class="slider">
-                            <ion-icon name="volume-mute"></ion-icon>
-                            <input type="range" name="slider" id="slider" min="0" max="100" >
-                            <ion-icon name="volume-high"></ion-icon>
+                        <div class="rating">
+                            <input type="radio" name="rating" id="star1">
+                            <label for="star1">
+                                <ion-icon name="star" id="1"></ion-icon>
+                            </label>
+                            <input type="radio" name="rating" id="star2">
+                            <label for="star2">
+                                <ion-icon name="star" id="2"></ion-icon>
+                            </label>
+                            <input type="radio" name="rating" id="star3">
+                            <label for="star3">
+                                <ion-icon name="star" id="3"></ion-icon>
+                            </label>
+                            <input type="radio" name="rating" id="star4">
+                            <label for="star4">
+                                <ion-icon name="star" id="4" ></ion-icon>
+                            </label>
+                            <input type="radio" name="rating" id="star5">
+                            <label for="star5">
+                                <ion-icon name="star" id="5"></ion-icon>
+                            </label>
                         </div>
                     </div>
 
                     <pre>
                         <code class="language-html highlight-code">
-            &lt;div class="slider"&gt;
+                &lt;div class="rating"&gt;
+                        &lt;input type="radio" name="rating" id="star1"&gt;
+                        &lt;label for="star1"&gt;
+                            &lt;ion-icon name="star" id="1"&gt;&lt;/ion-icon&gt;
+                        &lt;/label&gt;
+                        
+                        &lt;input type="radio" name="rating" id="star2"&gt;
+                        &lt;label for="star2"&gt;
+                            &lt;ion-icon name="star" id="2"&gt;&lt;/ion-icon&gt;
+                        &lt;/label&gt;
+                        
+                        &lt;input type="radio" name="rating" id="star3"&gt;
+                        &lt;label for="star3"&gt;
+                            &lt;ion-icon name="star" id="3"&gt;&lt;/ion-icon&gt;
+                        &lt;/label&gt;
+                        
+                        &lt;input type="radio" name="rating" id="star4"&gt;
+                        &lt;label for="star4"&gt;
+                            &lt;ion-icon name="star" id="4" &gt;&lt;/ion-icon&gt;
+                        &lt;/label&gt;
 
-                        &lt;ion-icon name="volume-mute"&gt;&lt;/ion-icon&gt;
+                        &lt;input type="radio" name="rating" id="star5"&gt;
+                        &lt;label for="star5"&gt;
+                            &lt;ion-icon name="star" id="5"&gt;&lt;/ion-icon&gt;
+                        &lt;/label&gt;
+                &lt;/div&gt;
 
-                        &lt;input type="range" name="slider" id="slider" min="0" max="100" /&gt;
 
-                        &lt;ion-icon name="volume-high"&gt;&lt;/ion-icon&gt;
+                &lt;!-- JS Code --&gt;
 
-            &lt;/div&gt;
+                const star = document.getElementsByName("rating");
+
+                function clickHandler(e) {
+                    let elementId = e.target.id;
+                    elementId = elementId[elementId.length - 1];
+
+                    for (let i = 1; i <= 5; i++) {
+                        console.log(document.getElementById(i));
+                        document.getElementById(i).classList.remove("rating-active");
+                    }
+
+                    for (let i = 1; i <= elementId; i++)
+                        document.getElementById(i).classList.add("rating-active");
+                }
+
+                star.forEach((ele) => ele.addEventListener("click", clickHandler));
+
                         </code>
                     </pre>
                 </div>
@@ -244,14 +300,14 @@
         </main>
         <footer>
             <div class="left-link">
-                <a href="../rating/rating.html">
+                <a href="../navigation/navigation.html">
                     <ion-icon name="chevron-back"></ion-icon>
-                    <span>Rating</span>
+                    <span>Navigation</span>
                 </a>
             </div>
             <div class="right-link">
-                <a href="../toast/toast.html">
-                    <span>Toast</span>
+                <a href="../slider/slider.html">
+                    <span>Slider</span>
                     <ion-icon name="chevron-forward"></ion-icon>
                 </a> 
             </div>
