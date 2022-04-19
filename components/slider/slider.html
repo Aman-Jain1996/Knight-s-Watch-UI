@@ -29,9 +29,9 @@
 
     <!-- HighlightJs import End -->
 
-    <link rel="stylesheet" href="./badge.css">
+    <link rel="stylesheet" href="./slider.css">
     <script defer src="../../index.js"></script>
-    <title>Knight's Watch UI | Badge</title>
+    <title>Knight's Watch UI | Slider</title>
 </head>
 <body>
     <div class="container">
@@ -63,7 +63,7 @@
                             <a href="../avatar/avatar.html">Avatar</a>
                         </li>
                         <li>
-                            <a href="#" class="active">Badge</a>
+                            <a href="../badge/badge.html">Badge</a>
                         </li>
                         <li>
                             <a href="../button/button.html">Button</a>
@@ -87,7 +87,7 @@
                             <a href="../navigation/navigation.html">Navigation</a>
                         </li>
                         <li>
-                            <a href="../slider/slider.html">Slider</a>
+                            <a href="../slider/slider.html" class="active" >Slider</a>
                         </li>
                         <li>
                             <a href="../toast/toast.html">Toast</a>
@@ -159,7 +159,7 @@
                             <a href="../avatar/avatar.html">Avatar</a>
                         </li>
                         <li>
-                            <a href="#" class="active">Badge</a>
+                            <a href="../badge/badge.html">Badge</a>
                         </li>
                         <li>
                             <a href="../button/button.html">Button</a>
@@ -183,7 +183,7 @@
                             <a href="../navigation/navigation.html">Navigation</a>
                         </li>
                         <li>
-                            <a href="../slider/slider.html">Slider</a>
+                            <a href="../slider/slider.html" class="active">Slider</a>
                         </li>
                         <li>
                             <a href="../toast/toast.html">Toast</a>
@@ -194,129 +194,58 @@
             <div class="main-area">
                 <div class="seperator">
                     <h3 class="main-heading">
-                    Badge
+                    Slider
                     </h3>
                     <p class="intro-para">
-                        Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used.
+                        Sliders are mainly used when a user need to select from a range of values e.g, price range in E-commerce applications and volume control in our system.
                     </p>
                 </div>
                 
                 <div class="seperator">
                     <h4 class="sub-heading">
-                        Badges used with Avatar
+                        Default Slider
                     </h4>
                     <p>
-                        They can be used to show the availability status of a user. We will be using our 'avatar' classes here to make avatar.
                         <p class="usage-area">
                             Class-Usage : 
-                            <span>online | sleep | dnd</span>
+                            <span>slider</span>
                         </p>
                     </p>
 
                     <div class="example">
-                        <div class="badge">
-                            <img class="avatar" src="https://picsum.photos/id/237/200/300" alt="Badge">
-                            <div class="online"></div>
-                        </div>
-                        
-                        <div class="badge">
-                            <img class="avatar sm" src="https://picsum.photos/id/1005/200/300" alt="Badge">
-                            <div class="sleep"></div>
-                        </div>
-
-                        <div class="badge">
-                            <img class="avatar square lg" src="https://picsum.photos/id/1012/200/300" alt="Badge">
-                            <div class="dnd"></div>
+                        <div class="slider">
+                            <ion-icon name="volume-mute"></ion-icon>
+                            <input type="range" name="slider" id="slider" min="0" max="100" >
+                            <ion-icon name="volume-high"></ion-icon>
                         </div>
                     </div>
 
                     <pre>
                         <code class="language-html highlight-code">
-            &lt;div class="badge"&gt;
-                &lt;img class="avatar" src="image-source" alt="Badge"&gt;
-                &lt;div class="online"&gt;&lt;/div&gt;
-            &lt;/div&gt;
+            &lt;div class="slider"&gt;
 
+                        &lt;ion-icon name="volume-mute"&gt;&lt;/ion-icon&gt;
 
-            &lt;div class="badge"&gt;
-                &lt;img class="avatar sm" src="image-source" alt="Badge"&gt;
-                &lt;div class="sleep"&gt;&lt;/div&gt;
-            &lt;/div&gt;
+                        &lt;input type="range" name="slider" id="slider" min="0" max="100" /&gt;
 
+                        &lt;ion-icon name="volume-high"&gt;&lt;/ion-icon&gt;
 
-            &lt;div class="badge"&gt;
-                &lt;img class="avatar square lg" src="image-source" alt="Badge"&gt;
-                &lt;div class="dnd"&gt;&lt;/div&gt;
             &lt;/div&gt;
                         </code>
                     </pre>
-
                 </div>
-
-                <div class="seperator">
-                    <h4 class="sub-heading">
-                        Badges with Icons
-                    </h4>
-                    <p>
-                        Badges can also be used to show count of something when clubbed with any icon e.g; Count of items in cart , count of mails etc.
-                        <p class="usage-area">
-                            Class-Usage : 
-                            <span>numbered | numbered-success | numbered-danger</span>
-                        </p>
-                    </p>
-
-                    <div class="example">
-                        <div class="badge">
-                            <ion-icon name="cart-outline"></ion-icon>
-                            <div class="numbered">4</div>
-                        </div>
-                        
-                        <div class="badge">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <div class="numbered-success">10</div>
-                        </div>
-
-                        <div class="badge">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                            <div class="numbered-danger">99+</div>
-                        </div>
-                    </div>
-
-                    <pre>
-                        <code class="language-html highlight-code">
-            &lt;div class="badge"&gt;
-                &lt;ion-icon name="cart-outline"&gt;&lt;/ion-icon&gt;
-                &lt;div class="numbered"&gt;4&lt;/div&gt;
-            &lt;/div&gt;
-
-
-            &lt;div class="badge"&gt;
-                &lt;ion-icon name="mail-outline"&gt;&lt;/ion-icon&gt;
-                &lt;div class="numbered-success"&gt;10&lt;/div&gt;
-            &lt;/div&gt;
-
-
-            &lt;div class="badge"&gt;
-                &lt;ion-icon name="calendar-outline"&gt;&lt;/ion-icon&gt;
-                &lt;div class="numbered-danger"&gt;99+&lt;/div&gt;
-            &lt;/div&gt;
-                        </code>
-                    </pre>
-
-                </div>
-
             </div>
         </main>
         <footer>
             <div class="left-link">
-                <a href="../avatar/avatar.html">
+                <a href="../navigation/navigation.html">
                     <ion-icon name="chevron-back"></ion-icon>
-                    <span>Avatar</span>
+                    <span>Navigation</span>
                 </a>
             </div>
             <div class="right-link">
-                <a href="../button/button.html">
-                    <span>Button</span>
+                <a href="../toast/toast.html">
+                    <span>Toast</span>
                     <ion-icon name="chevron-forward"></ion-icon>
                 </a> 
             </div>
