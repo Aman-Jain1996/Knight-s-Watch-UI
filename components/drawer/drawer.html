@@ -32,9 +32,10 @@
 
     <!-- HighlightJs import End -->
 
-    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./drawer.css">
     <script defer src="../../index.js"></script>
-    <title>Knight's Watch UI | Grid</title>
+    <script defer src="./drawer.js"></script>
+    <title>Knight's Watch UI | Drawer</title>
 </head>
 
 <body>
@@ -78,10 +79,10 @@
                         <a href="../card/card.html">Card</a>
                     </li>
                     <li>
-                        <a href="../drawer/drawer.html">Drawer</a>
+                        <a href="#" class="active">Drawer</a>
                     </li>
                     <li>
-                        <a href="#" class="active">Grid</a>
+                        <a href="../grid/grid.html">Grid</a>
                     </li>
                     <li>
                         <a href="../image/image.html">Image</a>
@@ -189,10 +190,10 @@
                             <a href="../card/card.html">Card</a>
                         </li>
                         <li>
-                            <a href="../drawer/drawer.html">Drawer</a>
+                            <a href="#" class="active">Drawer</a>
                         </li>
                         <li>
-                            <a href="#" class="active">Grid</a>
+                            <a href="../grid/grid.html">Grid</a>
                         </li>
                         <li>
                             <a href="../image/image.html">Image</a>
@@ -224,46 +225,65 @@
             <div class="main-area">
                 <div class="seperator">
                     <h3 class="main-heading">
-                        Grids
+                        Drawer
                     </h3>
                     <p class="intro-para">
-                        A grid is a set of intersecting horizontal and vertical lines defining columns and rows.
-                        Elements can be placed onto the grid within these column and row lines.
-                        Grids adapt to screen size and orientation, ensuring consistency across layouts.
+                        Drawers are used especially for showing menu items on small screen sizes and it will be used inside navigation for mobile first websites.
                     </p>
                 </div>
 
                 <div class="seperator">
                     <h4 class="sub-heading">
-                        Grid 2 column
+                        Drawer for medium screen sizes
                     </h4>
                     <p>
-                        This grid type has 2 columns and on adding more than 2 items,new item will occupy new row.
+                        This type of drawer is usually used for tablets which always have drawer visible on the left side of screen.
                     <p class="usage-area">
                         Class-Usage :
-                        <span>grid-2-col</span>
+                        <span>drawer</span>
                     </p>
                     </p>
 
                     <div class="example">
-                        <div class="grid grid-2-col">
-                            <img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive" />
-                            
-                            <img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/>
-                            
-                            <img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/>
+                        <div class="drawer">
+                            <div class="drawer-menu">
+                                <h4 class="menu-heading">Menu</h4>
+                                <ul class="menu-list">
+                                    <li> -> Item 1</li>
+                                    <li> -> Item 2</li>
+                                    <li> -> Item 3</li>
+                                    <li> -> Item 4</li>
+                                </ul>
+                            </div>
+                            <div class="main-content">
+                                <h2 class="content-heading">
+                                    Main Content Heading
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione iste quae sint cupiditate a eos, tenetur, commodi nostrum, totam rerum sapiente laborum corporis illum necessitatibus corrupti. Excepturi velit suscipit, ex aliquam harum, alias veritatis sed odit doloribus omnis animi necessitatibus culpa! Impedit aliquid tempore exercitationem quaerat quibusdam! Modi repellendus, distinctio minima voluptas tempore asperiores aliquid laborum molestias dignissimos. Voluptatum ut harum minus quisquam nam aspernatur, labore fugiat, quod aut incidunt inventore. Error minus officia fugit, illum eligendi temporibus rerum quidem, maxime possimus debitis excepturi odio ab sequi veritatis odit? Eaque minus adipisci accusamus labore nemo cumque quibusdam aliquid suscipit.</p>
+                            </div>
                         </div>
                     </div>
 
                     <pre>
                         <code class="language-html highlight-code">
-                &lt;div class="grid grid-2-col"&gt;
+                &lt;div class="drawer"&gt;
 
-                        &lt;img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive" /&gt;
-                            
-                        &lt;img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/&gt;
-                            
-                        &lt;img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/&gt;
+                            &lt;div class="drawer-menu"&gt;
+                                &lt;h4 class="menu-heading"&gt;Menu&lt;/h4&gt;
+                                &lt;ul class="menu-list"&gt;
+                                    &lt;li&gt; -&gt; Item 1&lt;/li&gt;
+                                    &lt;li&gt; -&gt; Item 2&lt;/li&gt;
+                                    &lt;li&gt; -&gt; Item 3&lt;/li&gt;
+                                    &lt;li&gt; -&gt; Item 4&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="main-content"&gt;
+                                &lt;h2 class="content-heading"&gt;
+                                    Main Heading
+                                &lt;/h2&gt;
+                                &lt;p&gt; Main Content &lt;/p&gt;
+                            &lt;/div&gt;
                 &lt;/div&gt;
                         </code>
                     </pre>
@@ -272,57 +292,85 @@
 
                 <div class="seperator">
                     <h4 class="sub-heading">
-                        Grid 3 column
+                        Dismissible Drawer (for small screens)
                     </h4>
                     <p>
-                        This grid type has 3 columns and on adding more than 3 items, new item will occupy new row.
+                        This type of drawer is usually used for mobile screens.
                     <p class="usage-area">
                         Class-Usage :
-                        <span>grid-3-col</span>
+                        <span>drawer-dismissible</span>
                     </p>
                     </p>
 
                     <div class="example">
-                        <div class="grid grid-3-col">
-                            <img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive" />
-                            
-                            <img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/>
-                            
-                            <img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/>
-
-                            <img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/>
+                        <div class="drawer drawer-dismissible">
+                            <div class="dismissible-drawer-menu menu-hidden">
+                                <div class="close-icon">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </div>
+                                <h4 class="menu-heading">Menu</h4>
+                                <ul class="menu-list">
+                                    <li> -> Item 1</li>
+                                    <li> -> Item 2</li>
+                                    <li> -> Item 3</li>
+                                    <li> -> Item 4</li>
+                                </ul>
+                            </div>
+                            <div class="dismissible-main-content expanded-main-content">
+                                <div class="menu-icon">
+                                    <ion-icon name="menu-outline"></ion-icon>
+                                </div>
+                                <h2 class="content-heading">
+                                    Main Content Heading
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione iste quae sint cupiditate a eos, tenetur, commodi nostrum, totam rerum sapiente laborum corporis illum necessitatibus corrupti. Excepturi velit suscipit, ex aliquam harum, alias veritatis sed odit doloribus omnis animi necessitatibus culpa! Impedit aliquid tempore exercitationem quaerat quibusdam! Modi repellendus, distinctio minima voluptas tempore asperiores aliquid laborum molestias dignissimos. Voluptatum ut harum minus quisquam nam aspernatur, labore fugiat, quod aut incidunt inventore. Error minus officia fugit, illum eligendi temporibus rerum quidem, maxime possimus debitis excepturi odio ab sequi veritatis odit? Eaque minus adipisci accusamus labore nemo cumque quibusdam aliquid suscipit.</p>
+                            </div>
                         </div>
                     </div>
 
                     <pre>
                         <code class="language-html highlight-code">
-                &lt;div class="grid grid-2-col"&gt;
+                &lt;div class="drawer drawer-dismissible"&gt;
 
-                        &lt;img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive" /&gt;
-                            
-                        &lt;img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/&gt;
-                            
-                        &lt;img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/&gt;
+                            &lt;div class="dismissible-drawer-menu menu-hidden"&gt;
+                                &lt;div class="close-icon"&gt;
+                                    &lt;ion-icon name="close-outline"&gt;&lt;/ion-icon&gt;
+                                &lt;/div&gt;
+                                &lt;h4 class="menu-heading"&gt;Menu&lt;/h4&gt;
+                                &lt;ul class="menu-list"&gt;
+                                    &lt;li&gt; -&gt; Item 1&lt;/li&gt;
+                                    &lt;li&gt; -&gt; Item 2&lt;/li&gt;
+                                    &lt;li&gt; -&gt; Item 3&lt;/li&gt;
+                                    &lt;li&gt; -&gt; Item 4&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
 
-                        &lt;img src="https://picsum.photos/id/110/600/400" alt="sunset" class="img-responsive"/&gt;
+                            &lt;div class="dismissible-main-content expanded-main-content"&gt;
+                                &lt;div class="menu-icon"&gt;
+                                    &lt;ion-icon name="menu-outline"&gt;&lt;/ion-icon&gt;
+                                &lt;/div&gt;
+                                &lt;h2 class="content-heading"&gt;
+                                    Main Content Heading
+                                &lt;/h2&gt;
+                                &lt;p&gt; Main Content &lt;/p&gt;
+                            &lt;/div&gt;
                 &lt;/div&gt;
                         </code>
                     </pre>
 
                 </div>
-
             </div>
         </main>
         <footer>
             <div class="left-link">
-                <a href="../drawer/drawer.html">
+                <a href="../card/card.html">
                     <ion-icon name="chevron-back"></ion-icon>
-                    <span>Drawer</span>
+                    <span>Card</span>
                 </a>
             </div>
             <div class="right-link">
-                <a href="../image/image.html">
-                    <span>Image</span>
+                <a href="../grid/grid.html">
+                    <span>Grid</span>
                     <ion-icon name="chevron-forward"></ion-icon>
                 </a>
             </div>
