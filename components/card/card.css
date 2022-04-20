@@ -1,147 +1,207 @@
-@import url('../css/shared.css');
-@import url('../button/button.css');
+@import url("../css/shared.css");
+@import url("../button/button.css");
 
-.card{
-    display: flex;
-    flex-flow: column wrap;
-    border: 1px solid var(--secondary);
-    background-color: #fff;
-    max-width: 30rem;
-    width:100%;
-    border-radius: 4px;
-    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px ,
-                rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid var(--secondary);
+  background-color: #fff;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
 }
 
-.card-heading{
-    font-size: 2.4rem;
-    font-weight:600;
-    color:var(--text-primaryDark);
-    padding:1.4rem;
-    padding-bottom: 0;
+.card-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--text-primaryDark);
+  padding: 1.4rem;
+  padding-bottom: 0;
 }
 
-.card-description{
-    padding:1.4rem;
-    font-size: 1.2rem;
-    font-weight:500;
-    color:var(--text-primaryDark);
-    margin-bottom:1rem;
+.card-dismiss {
+  position: relative;
 }
 
-.imaged-card img{
-    background-position: top left;
-    border-radius: 4px 4px 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: fill;
+.card-shadow {
+  box-shadow: 0px -1px 7px 4px rgb(0 0 0 / 50%);
 }
 
-.header-card .card-heading{
-    order:-1;
-    padding-bottom:1.4rem
+.card-dismiss .close-icon {
+  position: absolute;
+  top: 2%;
+  right: 2%;
 }
 
-.icon-card .card-heading{
-    order:-1;
-    display:flex;
-    align-items: center;
-    gap:1.4rem;
-    padding-bottom:1.4rem;
+.card-dismiss .close-icon ion-icon {
+  font-size: 2.4rem;
 }
 
-.badged-card{
-    position: relative;
+.card-dismiss .close-icon ion-icon:hover {
+  font-size: 2.4rem;
+  color: var(--text-primaryDark);
+  transform: scale(1.1);
 }
 
-.ecom-card{
-    position: relative;
+.card-description {
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primaryDark);
+  margin-bottom: 1rem;
 }
 
-.badge-item{
-    position: absolute;
-    top:5%;
-    left:-2%;
-    background-color: var(--danger);
-    padding: 8px;
-    color:var(--text-white);
-    font-size:1.2rem;
+.imaged-card img {
+  background-position: top left;
+  border-radius: 4px 4px 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }
 
-.ecom-card .wishlist-icon{
-    position: absolute;
-    top:2%;
-    right:2%;
-    margin: 8px;
-    color:var(--text-white);
-    font-size:2.4rem;
+.imaged-card-horizontal {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 40rem;
+  min-height: 20rem;
 }
 
-.ecom-card .wishlist-icon ion-icon{
-    font-size:2.4rem;
+.imaged-card-horizontal .imaged-card-image-container {
+  flex: 0 0 50%;
 }
 
-.ecom-card .wishlist-icon:hover{
-    transform: scale(1.1);
+.imaged-card-horizontal .imaged-card-content {
+  flex: 0 0 50%;
 }
 
-.ecom-card .manufacturer{
-    padding: 1.2rem;
-    font-size:1.2rem;
+.header-card .card-heading {
+  order: -1;
+  padding-bottom: 1.4rem;
 }
 
-.ecom-card .item-name{
-    padding: 1.2rem;
-    font-size:1.6rem;
-    color:var(--text-primaryDark);
-    font-weight:600;
-    padding-top: 0;
+.icon-card .card-heading {
+  order: -1;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
-.ecom-card .price{
-    display: flex;
-    align-items: center;
-    gap:8px;
-    padding: 1.2rem;
-    font-size:1.4rem;
-    color:var(--text-primaryDark);
-    font-weight:500;
-    padding-top: 0;
+.badged-card {
+  position: relative;
 }
 
-.ecom-card .price .mrp{
-    font-size:1.4rem;
-    font-weight: 300;
-    text-decoration: line-through;
+.overlay-card .overlay-parent {
+  position: relative;
 }
 
-.ecom-card .price .discount{
-    font-size:1.4rem;
-    font-weight: 400;
-    color:var(--danger)
+.overlay-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.5);
+  color: var(--text-primaryDark);
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
-.ecom-card .btn{
-    margin:1rem;
+.overlay-item:hover {
+  background-color: rgba(245, 245, 245, 0.8);
+  font-weight: 700;
 }
 
-.ecom-card .action-container{
-    display: flex;
-    align-items: center;
+.ecom-card {
+  position: relative;
 }
 
-.ecom-card .action-container ion-icon{
-    font-size:2.4rem;
-    margin: 1.4rem;
-    margin-left:auto;
-    padding:5px;
-    border-radius:50%;
+.badge-item {
+  position: absolute;
+  top: 5%;
+  left: -2%;
+  background-color: var(--danger);
+  padding: 8px;
+  color: var(--text-white);
+  font-size: 1.2rem;
 }
 
-.ecom-card .action-container ion-icon:hover{
-    background-color:var(--text-primaryLight);
-    color:var(--text-primaryDark);
-    font-weight: 700;
+.ecom-card .wishlist-icon {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  margin: 8px;
+  color: var(--text-white);
+  font-size: 2.4rem;
 }
 
+.ecom-card .wishlist-icon ion-icon {
+  font-size: 2.4rem;
+}
 
+.ecom-card .wishlist-icon:hover {
+  transform: scale(1.1);
+}
+
+.ecom-card .manufacturer {
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.ecom-card .item-name {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  color: var(--text-primaryDark);
+  font-weight: 600;
+  padding-top: 0;
+}
+
+.ecom-card .price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  color: var(--text-primaryDark);
+  font-weight: 500;
+  padding-top: 0;
+}
+
+.ecom-card .price .mrp {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.ecom-card .price .discount {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--danger);
+}
+
+.ecom-card .btn {
+  margin: 1rem;
+}
+
+.ecom-card .action-container {
+  display: flex;
+  align-items: center;
+}
+
+.ecom-card .action-container ion-icon {
+  font-size: 2.4rem;
+  margin: 1.4rem;
+  margin-left: auto;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.ecom-card .action-container ion-icon:hover {
+  background-color: var(--text-primaryLight);
+  color: var(--text-primaryDark);
+  font-weight: 700;
+}

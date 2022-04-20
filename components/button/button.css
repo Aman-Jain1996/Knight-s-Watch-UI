@@ -1,87 +1,130 @@
-@import url('../css/shared.css');
+@import url("../css/shared.css");
 
-.btn{
-    padding:1.2rem 1.6rem;
-    width:max-content;
-    border: none;
-    background-color:var(--btn-default);
-    color: var(--text-white);
-    font-weight: 500;
-    cursor: pointer;
+.btn {
+  padding: 1.2rem 1.6rem;
+  width: max-content;
+  border: none;
+  background-color: var(--btn-default);
+  color: var(--text-white);
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.btn-primary{
-    background-color:var(--btn-primary);
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgb(0 0 0 / 24%);
 }
 
-.btn-secondary{
-    background-color:var(--secondary);
+.btn:hover {
+  background-color: var(--btn-primary);
 }
 
-.btn-success{
-    background-color:var(--success);
+.btn-primary {
+  background-color: var(--btn-primary);
 }
 
-.btn-error{
-    background-color:var(--danger);
+.btn-secondary {
+  background-color: var(--secondary);
 }
 
-.rounded-sm{
-    border-radius:4px;
+.btn-success {
+  background-color: var(--success);
 }
 
-.rounded-m{
-    border-radius:6px;
+.btn-error {
+  background-color: var(--danger);
 }
 
-.rounded-lg{
-    border-radius:8px;
+.btn-disabled {
+  cursor: not-allowed;
 }
 
-.rounded-xl{
-    border-radius:10px;
+.rounded-sm {
+  border-radius: 4px;
 }
 
-.outline-default{
-    border: 1px solid var(--btn-default);
-    color:var(--btn-default);
-    background-color:transparent;
+.rounded-m {
+  border-radius: 6px;
 }
 
-.outline-success{
-    border: 1px solid var(--success);
-    color:var(--success);
-    background-color:transparent;
+.rounded-lg {
+  border-radius: 8px;
 }
 
-.outline-error{
-    border: 1px solid var(--danger);
-    color:var(--danger);
-    background-color:transparent;
+.rounded-xl {
+  border-radius: 10px;
 }
 
-.outline-primary{
-    border: 1px solid var(--btn-primary);
-    color:var(--btn-primary);
-    background-color:transparent;
+.outline-default {
+  border: 1px solid var(--btn-default);
+  color: var(--btn-default);
+  background-color: transparent;
 }
 
-.outline-secondary{
-    border: 1px solid var(--secondary);
-    color:var(--secondary);
-    background-color:transparent;
+button[class*="outline-"]:hover {
+  color: var(--text-white);
+  border-color: inherit;
 }
 
-.btn-hover:hover{
-    opacity:.7;
+.outline-success {
+  border: 1px solid var(--success);
+  color: var(--success);
+  background-color: transparent;
 }
 
-.btn-icon{
-    display:flex;
-    align-items: center;
+.outline-error {
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  background-color: transparent;
 }
 
-.btn-icon ion-icon{
-    font-size:1.8rem;
-    margin-right:8px;
+.outline-primary {
+  border: 1px solid var(--btn-primary);
+  color: var(--btn-primary);
+  background-color: transparent;
+}
+
+.outline-secondary {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  background-color: transparent;
+}
+
+.btn-hover:hover {
+  opacity: 0.7;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+.btn-icon ion-icon {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+
+.btn-float {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--btn-default);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-float ion-icon {
+  font-size: 2.4rem;
+}
+
+.btn-float:hover {
+  box-shadow: 3px 2px 22px 1px rgb(0 0 0 / 34%);
+}
+
+.btn-float:active {
+  transform: scale(0.95);
 }

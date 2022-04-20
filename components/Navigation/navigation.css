@@ -16,7 +16,7 @@
     cursor: pointer;
 }
 
-.nav span:not(.hover-element):hover{
+.nav span:not(.hover-element) a:hover{
     transform: scale(1.1);
     color:var(--btn-primary);
 }

@@ -5,7 +5,6 @@ function clickHandler(e) {
   elementId = elementId[elementId.length - 1];
 
   for (let i = 1; i <= 5; i++) {
-    console.log(document.getElementById(i));
     document.getElementById(i).classList.remove("rating-active");
   }
 

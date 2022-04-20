@@ -15,7 +15,6 @@ function showMenu() {
 menuIcon.addEventListener("click", showMenu);
 
 function HideMenu() {
-  console.log();
   document
     .querySelector(".dismissible-drawer-menu")
     .classList.add("menu-hidden");

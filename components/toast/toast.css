@@ -1,44 +1,52 @@
-@import url('../css/shared.css');
+@import url("../css/shared.css");
 
-.toast{
-    flex: 0 1 25rem;
-    margin:1.2rem;
-    border-radius:4px;
-    padding: 1.4rem 1rem;
-    border:1px solid;
-    font-size:1.6rem;
-    text-align:center;
-    font-weight: 600;
+.toast {
+  flex: 0 1 25rem;
+  margin: 1.2rem;
+  border-radius: 4px;
+  padding: 1.4rem 1rem;
+  border: 1px solid;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
 }
 
-.toast-success{
-    border:1px solid var(--success);
-    color:var(--success)
+.toast-success {
+  border: 1px solid var(--success);
+  color: var(--success);
 }
 
-.toast-warn{
-    border:1px solid var(--warning);
-    color:var(--warning)
+.toast-warn {
+  border: 1px solid var(--warning);
+  color: var(--warning);
 }
 
-.toast-error{
-    border:1px solid var(--danger);
-    color:var(--danger);
+.toast-error {
+  border: 1px solid var(--danger);
+  color: var(--danger);
 }
 
-.toast-dismiss{
-    display:flex;
-    justify-content:space-between;
-    gap:1rem;
+.toast-dismiss {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
 }
 
-.toast-dismiss span{
-    cursor: pointer;
-    color:initial;
+.toast-dismiss span {
+  position: absolute;
+  cursor: pointer;
+  color: initial;
+  top: 2%;
+  right: 2%;
 }
 
-@media only screen and (max-width:900px){
-    .toast{
-        flex: 0 1 20rem;
-    }
+.close-icon ion-icon {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .toast {
+    flex: 0 1 20rem;
+  }
 }
