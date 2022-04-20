@@ -1,0 +1,18 @@
+@import url("../css/shared.css");
+
+.rating {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating ion-icon:hover {
+  color: var(--warning);
+}
+
+.rating-active {
+  color: var(--warning);
+}
