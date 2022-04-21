@@ -78,7 +78,7 @@
 :is(.dismiss-primary , .dismiss-secondary , .dismiss-warning , 
 .dismiss-success , .dismiss-danger)::after{
     position:absolute;
-    content:'X';
+    content:"\00d7";
     top:1rem;
     right:1rem;
     cursor:pointer;

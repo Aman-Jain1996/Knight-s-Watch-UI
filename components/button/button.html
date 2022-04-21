@@ -226,7 +226,7 @@
                         They can be used using 'btn' class and we can also have variants of buttons using different variant classes.
                         <p class="usage-area">
                             Class-Usage : 
-                            <span>btn-primary | -secondary | -success | -error</span>
+                            <span>btn-primary | -secondary | -success | -error | -disabled</span>
                         </p>
                     </p>
 
@@ -236,6 +236,7 @@
                         <button class="btn btn-secondary">Secondary</button>
                         <button class="btn btn-success">Success</button>
                         <button class="btn btn-error">Error</button>
+                        <button class="btn btn-disabled">Disabled</button>
                     </div>
 
                     <pre>
@@ -365,6 +366,38 @@
 
                 <div class="seperator">
                     <h4 class="sub-heading">
+                        Link Button
+                    </h4>
+                    <p>
+                        Link buttons are made up of &lt;a&gt; tag. All the classes are applicable on this tag also.
+                    </p>
+
+                    <div class="example">
+                        <a href="#" class="btn btn-hover">Default</a>
+                        <button href="#" class="btn outline-primary rounded-sm btn-hover">Primary</button>
+                        <a href="#" class="btn btn-secondary rounded-m btn-hover">Secondary</a>
+                        <a href="#" class="btn outline-success rounded-lg btn-hover">Success</a>
+                        <a href="#" class="btn btn-error rounded-xl btn-hover">Error</a>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+        &lt;a href="#" class="btn btn-hover"&gt;Default&lt;/a&gt;
+
+        &lt;a href="#" class="btn outline-primary rounded-sm btn-hover"&gt;Primary&lt;/a&gt;
+
+        &lt;a href="#" class="btn btn-secondary rounded-m btn-hover"&gt;Secondary&lt;/a&gt;
+
+        &lt;a href="#" class="btn outline-success rounded-lg btn-hover"&gt;Success&lt;/a&gt;
+        
+        &lt;a href="#" class="btn btn-error rounded-xl btn-hover"&gt;Error&lt;/a&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
                         Icon Button
                     </h4>
                     <p>
@@ -383,6 +416,46 @@
                         <button class="btn btn-primary btn-icon">
                             <ion-icon name="arrow-down"></ion-icon>
                             Primary
+                        </button>
+                    </div>
+
+                    <pre>
+                        <code class="language-html highlight-code">
+            &lt;button class="btn btn-icon"&gt;
+                &lt;ion-icon name="save"&gt;&lt;/ion-icon&gt;
+                Default
+            &lt;/button&gt;
+            
+            &lt;button class="btn btn-primary btn-icon"&gt;
+                &lt;ion-icon name="arrow-down"&gt;&lt;/ion-icon&gt;
+                Primary
+            &lt;/button&gt;
+                        </code>
+                    </pre>
+
+                </div>
+
+                <div class="seperator">
+                    <h4 class="sub-heading">
+                        Floating Button
+                    </h4>
+                    <p>
+                        Floating Buttons are usually used for performing any action e.g., navigating to top of the page.
+                        <p class="usage-area">
+                            Class-Usage : 
+                            <span>btn-float</span>
+                        </p>
+                    </p>
+
+                    <div class="example">
+                        <button class="btn-float">
+                            <ion-icon name="arrow-up-outline"></ion-icon>
+                        </button>
+                        <button class="btn-float">
+                            <ion-icon name="arrow-redo-outline"></ion-icon>
+                        </button>
+                        <button class="btn-float">
+                            <ion-icon name="add-outline"></ion-icon>
                         </button>
                     </div>
 

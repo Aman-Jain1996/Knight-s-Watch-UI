@@ -10,3 +10,10 @@
   font-size: 2.4rem;
 }
 
+.example {
+  flex-direction: column;
+}
+
+.slider-value {
+  font-size: 1.6rem;
+}

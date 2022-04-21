@@ -30,9 +30,13 @@
     border-radius: 6px;
 }
 
-.stacked > img{
-    margin:-.6rem;
-    box-shadow: -6px 0 0 white;
+.stacked > img:first-child {
+  margin: -0.6rem;
+}
+
+.stacked > img:not(:first-child) {
+  margin: -0.6rem;
+  box-shadow: -5px 0px 0px 3px var(--text-white);
 }
 
 .busy , .available , .offline{
@@ -48,8 +52,8 @@
     height:1.3rem;
     width:1.3rem;
     border-radius:50%;
-    box-shadow: -2px -1px 0 white;
-    background-color: red;
+    box-shadow: 0px 0px 0 1px var(--text-white);
+    background-color: var(--danger);
 }
 
 .available::after{
@@ -60,8 +64,8 @@
     height:1.3rem;
     width:1.3rem;
     border-radius:50%;
-    box-shadow: -2px -1px 0 white;
-    background-color: green;
+    box-shadow: 0px 0px 0 1px var(--text-white);
+    background-color: var(--success);
 }
 
 .offline::after{
@@ -72,6 +76,6 @@
     height:1.3rem;
     width:1.3rem;
     border-radius:50%;
-    box-shadow: -2px -1px 0 white;
-    background-color: grey;
+    box-shadow: 0px 0px 0 1px var(--text-white);
+    background-color: var(--secondary);
 }
